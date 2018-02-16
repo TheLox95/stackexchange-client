@@ -7,7 +7,7 @@ export class Question {
     private _score: number;
     private _last_activity_date: number;
     private _creation_date: number;
-    private _question_id: number;
+    private _id: number;
     private _link: string;
     private _title: string;
 
@@ -75,11 +75,11 @@ export class Question {
     
 
 	public get question_id(): number {
-		return this._question_id;
+		return this._id;
 	}
 
 	public set question_id(value: number) {
-		this._question_id = value;
+		this._id = value;
 	}
     
 
