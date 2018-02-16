@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Router } from '@angular/router';  
+import { QuestionService } from './question.service';
 
 @Component({
   selector: 'app-question',
@@ -9,20 +9,20 @@ import { Router } from '@angular/router';
       question works!
     </p>
     <p>
+    {{_question?.title}}
     </p>
   `,
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent  {
-  private _id;
+  private _question;
 
-  constructor() {
-    //this.route.queryParams.subscribe(res => console.log(res.id));
+  constructor(private route: ActivatedRoute, private service: QuestionService) {
+    this.route.params.subscribe(id => this.fetchQuestion(id));
    }
 
-  getId() {
-    //this._id = +this.route.snapshot.paramMap.get("id");
-    
-  }
+   fetchQuestion(value: {[key: string]: any}){
+    this.service.get(value.id).subscribe(question => this._question = question);
+   }
 
 }

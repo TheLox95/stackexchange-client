@@ -21,7 +21,7 @@ export class QuestionListComponent implements OnInit {
   constructor(private questionService: QuestionService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
-    this._questions$ = this.questionService.get();
+    this._questions$ = this.questionService.getList();
   }
 
   showmeQuestion(){
