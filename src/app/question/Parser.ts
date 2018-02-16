@@ -1,4 +1,4 @@
-import { ApiStackexchangeItems } from './definitions/StackExchangeApi';
+import { ApiStackexchangeItems } from '../definitions/StackExchangeApi';
 import { Question } from './Question';
 
 

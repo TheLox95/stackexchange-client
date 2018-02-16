@@ -4,9 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
-import { QuestionListComponent } from './question-list/question-list.component';
+import { QuestionListComponent } from './question/question-list/question-list.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { QuestionService } from './question.service';
+import { QuestionService } from './question/question.service';
 
 
 @NgModule({

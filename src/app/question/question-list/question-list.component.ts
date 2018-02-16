@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/Observable';
   question-list works!
 </p>  
   <ul *ngFor="let question of _questions$ | async">
-    <li><a href="{{question.link}}"> {{question.title}} </a></li>
+    <li><a [innerHTML]="question.title" href="{{question.link}}">  </a></li>
 </ul>
 `,
   styleUrls: ['./question-list.component.css']
