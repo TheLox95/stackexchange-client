@@ -7,17 +7,18 @@ import { AppComponent } from './app.component';
 import { QuestionListComponent } from './question/question-list/question-list.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { QuestionService } from './question/question.service';
+import { QuestionModule } from './question/question.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    QuestionListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    QuestionModule
   ],
   providers: [QuestionService],
   bootstrap: [AppComponent]
