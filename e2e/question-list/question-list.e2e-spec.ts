@@ -9,7 +9,7 @@ describe('question-component', () => {
     list = new QuestionList();
   });
 
-  it('it should pass', () => {
+  it('it should fill the question list', () => {
     list.navigateTo();
     list.getParagraphText().then(el => expect(el).toBeDefined());
     

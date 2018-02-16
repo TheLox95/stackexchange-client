@@ -6,7 +6,7 @@ export class QuestionList {
   }
 
   getParagraphText() {
-    return element.all(by.css('#questionList li')).then(elements => elements[1]);
+    return element.all(by.css('ul li')).then(elements => elements[1]);
       /*.findElements(by.tagName('li'))
       .then(function (links) {
         return links[1]
