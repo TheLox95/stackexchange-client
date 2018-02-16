@@ -9,15 +9,13 @@ import { Question } from '../Question';
 
 describe('QuestionListComponent', () => {
   let component: QuestionListComponent;
-  let questionService: QuestionService;
-  let spy: jasmine.Spy;
   let fixture: ComponentFixture<QuestionListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [QuestionListComponent],
       providers: [{ provide: QuestionService, useClass: MockService }]
-    )
+    })
       .compileComponents();
   }));
 
