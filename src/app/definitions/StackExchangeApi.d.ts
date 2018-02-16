@@ -20,6 +20,7 @@ export interface ApiStackexchangeQuestions {
     question_id: number;
     link: string;
     title: string;
+    last_edit_date?: string;
   }
   // ApiStackexchangeOwner
   export interface ApiStackexchangeOwner {
