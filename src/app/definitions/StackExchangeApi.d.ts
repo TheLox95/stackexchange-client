@@ -24,6 +24,7 @@ export interface ApiStackexchangeQuestions {
     closed_date?: number | null;
     closed_reason?: string | null;
     accepted_answer_id?: number | null;
+    body: string;
   }
   // ApiStackexchangeOwner
   export interface ApiStackexchangeOwner {
