@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "fake-server": "json-server --watch fake-server/api.json"
+    "fake-server": "json-server --watch fake-server/api.json --port 4585"
   },
   "private": true,
   "dependencies": {

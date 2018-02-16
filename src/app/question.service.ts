@@ -5,12 +5,9 @@ import { HttpClient } from '@angular/common/http';
 export class QuestionService {
 
   constructor(private _http: HttpClient) {
-    this.get();
   }
 
   get() {
-    this._http.get('https://api.github.com/users/seeschweiler').subscribe(data => {
-      console.log(data);
-    });
+    return this._http.get('http://localhost:4585/questions');
   }
 }
