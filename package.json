@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"npm run serve\" \"npm run fake-server\" ",
+    "start": "npm run serve",
+    "dev": "concurrently \"npm run serve\" \"npm run fake-server\" ",
     "serve": "ng serve --open",
     "build": "ng build --prod",
     "test": "ng test",
