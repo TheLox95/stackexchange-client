@@ -9,18 +9,21 @@ export interface ApiStackexchangeQuestions {
   }
   // ApiStackexchangeItems
   export interface ApiStackexchangeItems {
-    tags: string[];
+    tags: (string)[];
     owner: ApiStackexchangeOwner;
-    is_answered: any;
+    is_answered: boolean;
     view_count: number;
-    answer_count: any;
-    score: any;
+    answer_count: number;
+    score: number;
     last_activity_date: number;
     creation_date: number;
+    last_edit_date?: number | null;
     question_id: number;
     link: string;
     title: string;
-    last_edit_date?: string;
+    closed_date?: number | null;
+    closed_reason?: string | null;
+    accepted_answer_id?: number | null;
   }
   // ApiStackexchangeOwner
   export interface ApiStackexchangeOwner {
@@ -30,6 +33,7 @@ export interface ApiStackexchangeQuestions {
     profile_image: string;
     display_name: string;
     link: string;
+    accept_rate?: number | null;
   }
   
   
