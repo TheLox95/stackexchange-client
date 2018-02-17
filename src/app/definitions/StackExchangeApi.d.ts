@@ -1,5 +1,5 @@
 export interface ApiStackexchangeQuestions {
-  items?: (ItemsEntity)[];
+  items?: (ApiStackexchangeItems)[];
   has_more: boolean;
   quota_max: number;
   quota_remaining: number;
