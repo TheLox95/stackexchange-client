@@ -10,7 +10,7 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
+    "e2e": "concurrently --kill-others \"ng e2e\" \"npm run fake-server\" ",
     "fake-server": "json-server --watch fake-server/api.json --port 4585"
   },
   "private": true,
