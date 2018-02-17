@@ -11,18 +11,20 @@ import { QuestionService } from './question.service';
     <p>
     {{_question?.title}}
     </p>
+    <p [innerHtml]="_question?.body">    
+    </p>
   `,
   styleUrls: ['./question.component.css']
 })
-export class QuestionComponent  {
+export class QuestionComponent {
   private _question;
 
   constructor(private route: ActivatedRoute, private service: QuestionService) {
     this.route.params.subscribe(id => this.fetchQuestion(id));
-   }
+  }
 
-   fetchQuestion(value: {[key: string]: any}){
+  fetchQuestion(value: { [key: string]: any }) {
     this.service.get(value.id).subscribe(question => this._question = question);
-   }
+  }
 
 }
