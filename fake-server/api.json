@@ -3,792 +3,823 @@
     "items": [
       {
         "tags": [
-          "python",
-          "reactjs",
-          "selenium"
+          "c++",
+          "cuda",
+          "clang",
+          "c++1z"
         ],
         "owner": {
-          "reputation": 16,
-          "user_id": 7253453,
+          "reputation": 613,
+          "user_id": 4069571,
           "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/795cacfbe305ae408f91afefba6945d9?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Bobs Burgers",
-          "link": "https://stackoverflow.com/users/7253453/bobs-burgers"
+          "accept_rate": 88,
+          "profile_image": "https://i.stack.imgur.com/UwoxX.jpg?s=128&g=1",
+          "display_name": "GPMueller",
+          "link": "https://stackoverflow.com/users/4069571/gpmueller"
+        },
+        "is_answered": false,
+        "view_count": 111,
+        "answer_count": 1,
+        "score": 6,
+        "last_activity_date": 1518826181,
+        "creation_date": 1514111037,
+        "question_id": 47959767,
+        "link": "https://stackoverflow.com/questions/47959767/can-c17-be-used-together-with-cuda-using-clang",
+        "title": "Can C++17 be used together with CUDA using clang?",
+        "body": "<p>As far as using <code>nvcc</code>, one needs to use the corresponding <code>gcc</code> (currently max. 5.4 I believe) in conjunction. This of course somewhat prevents one from using C++17 on the host side.</p>\n\n<p>Since C++17 can be compiled using <code>clang 5</code> and upwards (see <a href=\"http://clang.llvm.org/cxx_status.html\" rel=\"noreferrer\">here</a>), and one can compile cuda code as well (see <a href=\"http://llvm.org/docs/CompileCudaWithLLVM.html\" rel=\"noreferrer\">here</a>), <strong>is it possible to use both C++17 and CUDA at the same time</strong> (or can there be problems, e.g. with the CUDA runtime)?</p>\n"
+      },
+      {
+        "tags": [
+          "javascript"
+        ],
+        "owner": {
+          "reputation": 15,
+          "user_id": 9142827,
+          "user_type": "registered",
+          "profile_image": "https://i.stack.imgur.com/tQZpw.jpg?s=128&g=1",
+          "display_name": "Harman Pannu",
+          "link": "https://stackoverflow.com/users/9142827/harman-pannu"
         },
         "is_answered": true,
-        "view_count": 29,
-        "answer_count": 1,
-        "score": 1,
-        "last_activity_date": 1518736782,
-        "creation_date": 1518722638,
-        "last_edit_date": 1518723868,
-        "question_id": 48814810,
-        "link": "https://stackoverflow.com/questions/48814810/python-access-react-props-using-selenium",
-        "title": "Python - Access React Props using Selenium"
-      },
-      {
-        "tags": [
-          "ocaml",
-          "opam"
-        ],
-        "owner": {
-          "reputation": 13,
-          "user_id": 7595433,
-          "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/42d275db46268b6c8e9da7877c76726a?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Tim Leonard",
-          "link": "https://stackoverflow.com/users/7595433/tim-leonard"
-        },
-        "is_answered": false,
-        "view_count": 62,
-        "answer_count": 1,
-        "score": 0,
-        "last_activity_date": 1518736781,
-        "creation_date": 1518226548,
-        "last_edit_date": 1518275741,
-        "question_id": 48716384,
-        "link": "https://stackoverflow.com/questions/48716384/why-cant-opam-install-the-graphics-package",
-        "title": "Why can&#39;t opam install the graphics package?"
-      },
-      {
-        "tags": [
-          "bash",
-          "xargs"
-        ],
-        "owner": {
-          "reputation": 471,
-          "user_id": 1245989,
-          "user_type": "registered",
-          "accept_rate": 36,
-          "profile_image": "https://www.gravatar.com/avatar/52b393b8b662007e6cba2d7c8efdfb0a?s=128&d=identicon&r=PG",
-          "display_name": "cngkaygusuz",
-          "link": "https://stackoverflow.com/users/1245989/cngkaygusuz"
-        },
-        "is_answered": false,
-        "view_count": 1,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736779,
-        "creation_date": 1518736779,
-        "question_id": 48817844,
-        "link": "https://stackoverflow.com/questions/48817844/xargs-doesnt-recognize-n1-when-used-with-i",
-        "title": "xargs doesn&#39;t recognize &quot;-n1&quot; when used with &quot;-I%&quot;"
-      },
-      {
-        "tags": [
-          "python",
-          "function",
-          "class",
-          "tkinter"
-        ],
-        "owner": {
-          "reputation": 16,
-          "user_id": 8967447,
-          "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/60eec41ba40664ea24a47ec942cbbcb6?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Bill",
-          "link": "https://stackoverflow.com/users/8967447/bill"
-        },
-        "is_answered": false,
-        "view_count": 16,
-        "answer_count": 1,
-        "score": 0,
-        "last_activity_date": 1518736778,
-        "creation_date": 1518736413,
-        "last_edit_date": 1518736624,
-        "question_id": 48817792,
-        "link": "https://stackoverflow.com/questions/48817792/call-a-class-function-in-init-from-another-class",
-        "title": "Call a class function in __init__ from another class?"
-      },
-      {
-        "tags": [
-          "amazon-web-services",
-          "junit",
-          "aws-devicefarm"
-        ],
-        "owner": {
-          "reputation": 160,
-          "user_id": 2475012,
-          "user_type": "registered",
-          "accept_rate": 77,
-          "profile_image": "https://www.gravatar.com/avatar/cd71d7a668c63cfeebc727b154e4f5ac?s=128&d=identicon&r=PG",
-          "display_name": "Jansky",
-          "link": "https://stackoverflow.com/users/2475012/jansky"
-        },
-        "is_answered": false,
-        "view_count": 13,
-        "answer_count": 1,
-        "score": 0,
-        "last_activity_date": 1518736773,
-        "creation_date": 1518615314,
-        "question_id": 48788525,
-        "link": "https://stackoverflow.com/questions/48788525/using-aws-device-farm-with-junit-5",
-        "title": "Using AWS Device Farm with JUnit 5"
-      },
-      {
-        "tags": [
-          "nexus"
-        ],
-        "owner": {
-          "reputation": 3,
-          "user_id": 6672255,
-          "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/0d373ad1c0822b18b60c1127f8a7a254?s=128&d=identicon&r=PG&f=1",
-          "display_name": "paoloo",
-          "link": "https://stackoverflow.com/users/6672255/paoloo"
-        },
-        "is_answered": false,
-        "view_count": 13,
-        "answer_count": 1,
-        "score": 0,
-        "last_activity_date": 1518736762,
-        "creation_date": 1517848021,
-        "question_id": 48627040,
-        "link": "https://stackoverflow.com/questions/48627040/configuration-of-nexus-private-repository",
-        "title": "Configuration of Nexus private repository"
-      },
-      {
-        "tags": [
-          "asp.net",
-          ".net",
-          "asp.net-core",
-          ".net-framework-version"
-        ],
-        "owner": {
-          "reputation": 151,
-          "user_id": 2084834,
-          "user_type": "registered",
-          "accept_rate": 65,
-          "profile_image": "https://www.gravatar.com/avatar/ef9a56b091675a5974880e41b5890b4f?s=128&d=identicon&r=PG",
-          "display_name": "Richard Watts",
-          "link": "https://stackoverflow.com/users/2084834/richard-watts"
-        },
-        "is_answered": true,
-        "view_count": 5103,
+        "view_count": 46,
         "answer_count": 4,
-        "score": 7,
-        "last_activity_date": 1518736757,
-        "creation_date": 1488795865,
-        "question_id": 42623103,
-        "link": "https://stackoverflow.com/questions/42623103/convert-net-core-to-net-framework",
-        "title": "Convert .Net Core to .Net Framework"
-      },
-      {
-        "tags": [
-          "javascript",
-          "html"
-        ],
-        "owner": {
-          "reputation": 11,
-          "user_id": 7517097,
-          "user_type": "registered",
-          "profile_image": "https://lh5.googleusercontent.com/-c1_4e1v1mQw/AAAAAAAAAAI/AAAAAAAAAHo/6GacFN8AkVA/photo.jpg?sz=128",
-          "display_name": "Sean",
-          "link": "https://stackoverflow.com/users/7517097/sean"
-        },
-        "is_answered": false,
-        "view_count": 14,
-        "closed_date": 1518736629,
-        "answer_count": 1,
         "score": 0,
-        "last_activity_date": 1518736756,
-        "creation_date": 1518736394,
-        "last_edit_date": 1518736560,
-        "question_id": 48817788,
-        "link": "https://stackoverflow.com/questions/48817788/how-to-run-a-javascript-function-when-a-user-hits-a-certain-point-on-a-page",
-        "closed_reason": "duplicate",
-        "title": "How to run a javascript function when a user hits a certain point on a page?"
+        "last_activity_date": 1518826178,
+        "creation_date": 1518818340,
+        "last_edit_date": 1518820911,
+        "question_id": 48835449,
+        "link": "https://stackoverflow.com/questions/48835449/how-to-add-to-subtract-prices-using-javascript-when-user-check-unchecks-boxes",
+        "title": "How to add to subtract prices using Javascript when user check/unchecks boxes?",
+        "body": "<p>I have a list of checkboxes with different prices for all items. How do I implement functionality If user select more than one item how do I add price to total or delete if unselect? In javascript.</p>\n\n<p>I am new to javascript so pardon me if my code is not right.</p>\n\n<p><div class=\"snippet\" data-lang=\"js\" data-hide=\"false\" data-console=\"true\" data-babel=\"false\">\r\n<div class=\"snippet-code\">\r\n<pre class=\"snippet-code-js lang-js prettyprint-override\"><code>let pricesList = new Array();\r\npricesList[\"all\"] = 200;\r\npricesList[\"js-frameworks\"] = 100;\r\npricesList[\"js-libs\"] = 100;\r\npricesList[\"express\"] = 100;\r\npricesList[\"node\"] = 100;\r\npricesList[\"build-tools\"] = 100;\r\npricesList[\"npm\"] = 100;\r\nconst activityCheckBoxes = \t\t\tdocument.querySelectorAll(\"input[type=checkbox]\");\r\nfunction getActivityPrices(userInput) {\r\n  // selected all checkBoxes\r\n    \r\n  // Loop through checkbox list\r\n  for (let i = 0; i &lt; activityCheckBoxes.length; i++) {\r\n\tif (activityCheckBoxes[i].checked) {\r\n   \t  userInput = activityCheckBoxes[i].name;\r\n   \t}\r\n  }\r\n  return pricesList[userInput];\r\n}\r\n    \r\nfunction calculateTotal() {\r\n  let total = getActivityPrices();\r\n  console.log(total);\r\n  printIt.innerHTML = `Your Total is $${total}`;\r\n  printIt.style.display = \"block\";\r\n}\r\n    \r\nactivities.onchange = calculateTotal;</code></pre>\r\n<pre class=\"snippet-code-html lang-html prettyprint-override\"><code>&lt;fieldset class=\"activities\"&gt;\r\n &lt;legend&gt;Register for Activities&lt;/legend&gt;\r\n &lt;label&gt;\r\n     &lt;input type=\"checkbox\" name=\"all\"&gt; Main Conference — $200\r\n &lt;/label&gt;\r\n &lt;label&gt;\r\n     &lt;input type=\"checkbox\" name=\"js-frameworks\"&gt; JavaScript Frameworks Workshop — Tuesday 9am-12pm, $100\r\n &lt;/label&gt;\r\n &lt;label&gt;\r\n     &lt;input type=\"checkbox\" name=\"js-libs\"&gt; JavaScript Libraries Workshop — Tuesday 1pm-4pm, $100\r\n &lt;/label&gt;\r\n &lt;label&gt;\r\n     &lt;input type=\"checkbox\" name=\"express\"&gt; Express Workshop — Tuesday 9am-12pm, $100\r\n &lt;/label&gt;\r\n &lt;label&gt;\r\n     &lt;input type=\"checkbox\" name=\"node\"&gt; Node.js Workshop — Tuesday 1pm-4pm, $100\r\n &lt;/label&gt;\r\n &lt;label&gt;\r\n     &lt;input type=\"checkbox\" name=\"build-tools\"&gt; Build tools Workshop — Wednesday 9am-12pm, $100\r\n &lt;/label&gt;\r\n &lt;label&gt;\r\n     &lt;input type=\"checkbox\" name=\"npm\"&gt; npm Workshop — Wednesday 1pm-4pm, $100\r\n &lt;/label&gt;\r\n&lt;/fieldset&gt;</code></pre>\r\n</div>\r\n</div>\r\n</p>\n"
       },
       {
         "tags": [
-          "html",
-          "vba",
-          "excel-vba"
+          "forth"
         ],
         "owner": {
-          "reputation": 1,
-          "user_id": 9367345,
+          "reputation": 29623,
+          "user_id": 124486,
           "user_type": "registered",
-          "profile_image": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=128",
-          "display_name": "Nms Trader",
-          "link": "https://stackoverflow.com/users/9367345/nms-trader"
-        },
-        "is_answered": false,
-        "view_count": 15,
-        "answer_count": 0,
-        "score": -4,
-        "last_activity_date": 1518736755,
-        "creation_date": 1518735115,
-        "last_edit_date": 1518736755,
-        "question_id": 48817587,
-        "link": "https://stackoverflow.com/questions/48817587/hi-can-anyone-tell-me-how-to-import-data-from-this-site",
-        "title": "Hi Can anyone tell me how to import data from this site?"
-      },
-      {
-        "tags": [
-          "http",
-          "curl",
-          "post",
-          "get",
-          "postman"
-        ],
-        "owner": {
-          "reputation": 37,
-          "user_id": 8761914,
-          "user_type": "registered",
-          "accept_rate": 25,
-          "profile_image": "https://www.gravatar.com/avatar/24e93f0d9539d0b42c1458a329cb9629?s=128&d=identicon&r=PG&f=1",
-          "display_name": "PLZHELP",
-          "link": "https://stackoverflow.com/users/8761914/plzhelp"
+          "accept_rate": 47,
+          "profile_image": "https://www.gravatar.com/avatar/605442f85418d858e2ce1e1aea2092bb?s=128&d=identicon&r=PG",
+          "display_name": "Evan Carroll",
+          "link": "https://stackoverflow.com/users/124486/evan-carroll"
         },
         "is_answered": false,
         "view_count": 2,
         "answer_count": 0,
         "score": 0,
-        "last_activity_date": 1518736753,
-        "creation_date": 1518736753,
-        "question_id": 48817840,
-        "link": "https://stackoverflow.com/questions/48817840/send-proper-form-data-request-payload",
-        "title": "Send proper form data request payload"
+        "last_activity_date": 1518826177,
+        "creation_date": 1518826177,
+        "question_id": 48836613,
+        "link": "https://stackoverflow.com/questions/48836613/forth-infix-rewriting",
+        "title": "Forth infix rewriting",
+        "body": "<p>Chapter 2 Problem 2 of <a href=\"http://www.forth.com/starting-forth/\" rel=\"nofollow noreferrer\">Starting FORTH</a> has</p>\n\n<pre><code>a**2 + ab + c  ( c a b -- result )\n</code></pre>\n\n<p>The answer key says</p>\n\n<pre><code>: 2-4 OVER + * + ;\n</code></pre>\n\n<p>How is that the case, let's assume a=1, b=2, c=3</p>\n\n<pre><code>3 1 2  ok\nOVER .s &lt;4&gt; 3 1 2 1  ok\n+ .s &lt;3&gt; 3 1 3  ok\n* .s &lt;2&gt; 3 3  ok\n+ .s &lt;1&gt; 6  ok\n</code></pre>\n\n<p>But if we fill in the same arguments</p>\n\n<pre><code>1**2 + 2*3 + 3\n1 + 6 + 3\n10\n</code></pre>\n\n<p>10 doesn't equal 6. Is this a typo</p>\n"
+      },
+      {
+        "tags": [
+          "android",
+          "android-listview"
+        ],
+        "owner": {
+          "reputation": 1051,
+          "user_id": 2687734,
+          "user_type": "registered",
+          "accept_rate": 80,
+          "profile_image": "https://www.gravatar.com/avatar/ce71f12701d36d51d0f9d492b91c921e?s=128&d=identicon&r=PG&f=1",
+          "display_name": "Artem",
+          "link": "https://stackoverflow.com/users/2687734/artem"
+        },
+        "is_answered": true,
+        "view_count": 37232,
+        "accepted_answer_id": 18417516,
+        "answer_count": 4,
+        "score": 25,
+        "last_activity_date": 1518826176,
+        "creation_date": 1377290477,
+        "last_edit_date": 1377339933,
+        "question_id": 18411494,
+        "link": "https://stackoverflow.com/questions/18411494/android-listview-show-only-one-item",
+        "title": "Android Listview show only one item",
+        "body": "<p>I have a ListView, where i changed appearence of row, but listview have size of one row, instead of fullscreen.</p>\n\n<p>list_item.xml:</p>\n\n<pre><code>&lt;LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\nxmlns:tools=\"http://schemas.android.com/tools\"\nandroid:layout_width=\"fill_parent\"\nandroid:layout_height=\"wrap_content\"\nandroid:orientation=\"vertical\" &gt;\n\n&lt;TextView\n    android:layout_width=\"fill_parent\"\n    android:layout_height=\"wrap_content\"/&gt;\n\n&lt;LinearLayout\n    android:layout_width=\"fill_parent\"\n    android:layout_height=\"wrap_content\" &gt;\n\n    &lt;TextView\n        android:id=\"@+id/textView_news_time\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:gravity=\"center\"\n        android:textColor=\"#0082A8\" /&gt;\n\n    &lt;TextView\n        android:id=\"@+id/textView_news_header\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\" /&gt;\n&lt;/LinearLayout&gt;\n\n&lt;TextView\n    android:layout_width=\"fill_parent\"\n    android:layout_height=\"wrap_content\" /&gt;\n\n&lt;/LinearLayout&gt;\n</code></pre>\n\n<p>tab_news.xml:</p>\n\n<pre><code>&lt;LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\nxmlns:tools=\"http://schemas.android.com/tools\"\nandroid:layout_width=\"wrap_content\"\nandroid:layout_height=\"fill_parent\"\nandroid:orientation=\"vertical\" &gt;\n\n&lt;ListView\n    android:id=\"@+id/list_news\"\n    android:layout_width=\"fill_parent\"\n    android:layout_height=\"fill_parent\" &gt;\n\n &lt;/ListView&gt;\n\n  &lt;/LinearLayout&gt;\n</code></pre>\n\n<p>Making Adapter:</p>\n\n<pre><code>public class RSSAdapter extends ArrayAdapter&lt;RSSitem&gt; {\nContext context; \nint layoutResourceId;    \nArrayList&lt;RSSitem&gt; data = null;\nSimpleDateFormat sdf = new SimpleDateFormat(\"kk:mm \");\npublic RSSAdapter(Context context, int layoutResourceId, ArrayList&lt;RSSitem&gt; data) {\n    super(context, layoutResourceId, data);\n    this.layoutResourceId = layoutResourceId;\n    this.context = context;\n    this.data = data;\n}\n\n@Override\npublic View getView(int position, View convertView, ViewGroup parent) {\n    View row = convertView;\n    NewsHolder holder = null;\n\n    if(row == null)\n    {\n        LayoutInflater inflater = ((Activity)context).getLayoutInflater();\n        row = inflater.inflate(layoutResourceId, parent, false);\n\n        holder = new NewsHolder();\n        holder.txtTime = (TextView)row.findViewById(R.id.textView_news_time);\n        holder.txtNews = (TextView)row.findViewById(R.id.textView_news_header);\n\n        row.setTag(holder);\n    }\n    else\n    {\n        holder = (NewsHolder)row.getTag();\n    }\n\n    RSSitem item = data.get(position);\n    holder.txtTime.setText(sdf.format(item.getPubDate()));\n    holder.txtNews.setText(item.getTitle());\n\n    return row;\n}\n\nstatic class NewsHolder\n{\n    TextView txtTime;\n    TextView txtNews;\n}\n</code></pre>\n\n<p>Items are scrolling.</p>\n\n<p>Sorry for bad English. Thanks for help</p>\n\n<p>Advice of @Varun didn't help</p>\n\n<p>I found mistake. Thanks. Answer in \"answers\")</p>\n"
+      },
+      {
+        "tags": [
+          "swift"
+        ],
+        "owner": {
+          "reputation": 22,
+          "user_id": 9043410,
+          "user_type": "registered",
+          "accept_rate": 17,
+          "profile_image": "https://www.gravatar.com/avatar/a7435865d04acf6a02e9183a3bbecd81?s=128&d=identicon&r=PG&f=1",
+          "display_name": "bencodes661",
+          "link": "https://stackoverflow.com/users/9043410/bencodes661"
+        },
+        "is_answered": false,
+        "view_count": 9,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826172,
+        "creation_date": 1518825709,
+        "last_edit_date": 1518826172,
+        "question_id": 48836561,
+        "link": "https://stackoverflow.com/questions/48836561/swift-find-the-2nd-and-3rd-lowest-numbers-in-an-array",
+        "title": "swift find the 2nd and 3rd lowest numbers in an array -",
+        "body": "<p>Below I have a list of cities and I compare a user's current location to the cities and use the (min) function </p>\n\n<pre><code>let closestCity = min(theDistanceInMetersFromBusselton,theDistanceInMetersFromBunbury,theDistanceInMetersFromJoondalup,theDistanceInMetersFromArmadale)\n</code></pre>\n\n<p>to return the closest city, though now I would like to return the second and third closest city.</p>\n\n<p>I haven't been able to get this to work as yet though I'm thinking something along the lines of:</p>\n\n<pre><code>citiesArray - closestCity = SecondClosestCitiesArray \n</code></pre>\n\n<p>then do a <code>secondClosestCity = min(SecondClosestCitiesArray)</code> to get the second closest city.</p>\n\n<p>Then repeat this to find the third closest?</p>\n\n<p>Any ideas?</p>\n\n<pre><code>extension HomePage {\n    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])\n    {\n        let db = Firestore.firestore()\n\n        guard let uid = Auth.auth().currentUser?.uid else { return }\n\n        let location = locations[0]\n        let actualLatitude = String(location.coordinate.latitude)\n        let actualLongitude = String(location.coordinate.longitude)\n\n        guard let doubleActualLatitude = Double(actualLatitude) else { return }\n\n        guard let doubleActualLongitude = Double(actualLongitude) else { return }\n\n        ///users current location\n        let usersCurrentLocation = CLLocation(latitude: doubleActualLatitude, longitude: doubleActualLongitude)\n\n        //////////////list of locations ////////////////\n\n        //////////ARMADALE/////////////////////\n\n        let ArmadaleLatitude = Double(-32.1530)\n        let ArmadaleLongitude = Double(116.0150)\n\n        let ArmadaleCoordinates = CLLocation(latitude:ArmadaleLatitude, longitude: ArmadaleLongitude)\n\n        let theDistanceInMetersFromArmadale = usersCurrentLocation.distance(from: ArmadaleCoordinates)\n\n        ////////////////Bunbury///////////////////\n        let BunburyLatitude = Double(-33.3256)\n        let BunburyLongitude = Double(115.6396)\n\n        let BunburyCoordinates = CLLocation(latitude:BunburyLatitude, longitude: BunburyLongitude)\n\n        let theDistanceInMetersFromBunbury = usersCurrentLocation.distance(from: BunburyCoordinates)\n\n        /////////////////////////////////////////////\n\n        ////////Busselton//////////////////\n        let busseltonLatitude = Double(-33.6555)\n        let busseltonLongitude = Double(115.3500)\n\n        let busseltonCoordinates = CLLocation(latitude:busseltonLatitude, longitude: busseltonLongitude)\n\n        let theDistanceInMetersFromBusselton = usersCurrentLocation.distance(from: busseltonCoordinates)\n        /////////////////////////////////\n\n        /////////Joondalup////////////////////\n        let JoondalupLatitude = Double(-32.5361)\n        let JoondalupLongitude = Double(115.7424)\n\n        let JoondalupCoordinates = CLLocation(latitude:JoondalupLatitude, longitude: JoondalupLongitude)\n\n        let theDistanceInMetersFromJoondalup = usersCurrentLocation.distance(from: JoondalupCoordinates)\n\n        //////////////////////////////////////\n\n        /////return the the closest city\n        let closestCity = min(theDistanceInMetersFromBusselton,theDistanceInMetersFromBunbury,theDistanceInMetersFromJoondalup,theDistanceInMetersFromArmadale)\n\n        func findClosestCity(){\n            //////////Armadale////////////////////////\n            if closestCity == theDistanceInMetersFromArmadale{\n                db.collection(\"Users\").document(uid).setData([\"Location\": \"Armadale\" ], options: SetOptions.merge())\n\n            /////////Bunbury////////////\n            }else if closestCity == theDistanceInMetersFromBunbury{\n                let Bunbury = \"Bunbury\"\n\n                db.collection(\"Users\").document(uid).setData([\"Location\": Bunbury ], options: SetOptions.merge())\n\n            ///////////// Busselton//////////////\n            }else if closestCity == theDistanceInMetersFromBusselton{\n                let Busselton = \"Busselton\"\n\n                db.collection(\"Users\").document(uid).setData([\"Location\": Busselton ], options: SetOptions.merge())\n\n            /////////////Joondalup//////////////////\n            }else if closestCity == theDistanceInMetersFromJoondalup{\n                db.collection(\"Users\").document(uid).setData([\"Location\": \"Joondalup\" ], options: SetOptions.merge())\n            }\n        }\n    }\n}\n</code></pre>\n"
+      },
+      {
+        "tags": [
+          "r",
+          "ggplot2"
+        ],
+        "owner": {
+          "reputation": 10,
+          "user_id": 9243286,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/587a8c767bbac551be506d1cbc9616d9?s=128&d=identicon&r=PG&f=1",
+          "display_name": "B.LIANG",
+          "link": "https://stackoverflow.com/users/9243286/b-liang"
+        },
+        "is_answered": false,
+        "view_count": 15,
+        "answer_count": 2,
+        "score": 0,
+        "last_activity_date": 1518826168,
+        "creation_date": 1518825352,
+        "last_edit_date": 1518826168,
+        "question_id": 48836521,
+        "link": "https://stackoverflow.com/questions/48836521/express-relations-between-three-variables-using-ggplot2-in-r",
+        "title": "Express relations between three variables using ggplot2 in R",
+        "body": "<p>I have a data frame like this</p>\n\n<pre><code>structure(list(cli_exp = c(1L, 1L, 2L, 1L, 1L, 0L, 2L, 0L, 1L, \n1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 0L, 1L, 2L, 2L, 0L, 1L, 0L, \n1L, 1L, 2L, 0L, 1L), vcs_exp = c(0L, 0L, 1L, 0L, 0L, 0L, 0L, \n1L, 0L, 0L, 1L, 1L, 0L, 0L, 1L, 0L, 0L, 1L, 0L, 0L, 1L, 2L, 1L, \n1L, 0L, 0L, 0L, 2L, 1L, 0L), web_exp = c(2L, 2L, 2L, 1L, 0L, \n0L, 1L, 2L, 0L, 0L, 3L, 0L, 1L, 0L, 1L, 0L, 1L, 0L, 2L, 1L, 1L, \n1L, 1L, 0L, 0L, 1L, 1L, 2L, 0L, 0L)), .Names = c(\"cli_exp\", \"vcs_exp\", \n\"web_exp\"), row.names = c(NA, 30L), class = \"data.frame\")\n</code></pre>\n\n<p>I want to use ggplot2 to express the relation between these three variables and tried the simple point plot</p>\n\n<pre><code>ggplot(data = data) +\n    geom_point(mapping = aes(x = web_exp, y = vcs_exp, color = cli_exp))\n</code></pre>\n\n<p>But apparently, there are many overlapping data points, which are not suitable for point display. Are there any better ways?</p>\n"
+      },
+      {
+        "tags": [
+          "c#",
+          "visual-studio",
+          "visual-studio-2010",
+          "lazy-loading",
+          "visual-studio-debugging"
+        ],
+        "owner": {
+          "reputation": 12016,
+          "user_id": 149265,
+          "user_type": "registered",
+          "accept_rate": 96,
+          "profile_image": "https://i.stack.imgur.com/fDKIG.jpg?s=128&g=1",
+          "display_name": "Allon Guralnek",
+          "link": "https://stackoverflow.com/users/149265/allon-guralnek"
+        },
+        "is_answered": true,
+        "view_count": 20807,
+        "accepted_answer_id": 4460919,
+        "answer_count": 4,
+        "score": 16,
+        "last_activity_date": 1518826168,
+        "creation_date": 1292498401,
+        "last_edit_date": 1375898862,
+        "question_id": 4460206,
+        "link": "https://stackoverflow.com/questions/4460206/lazyt-the-function-evaluation-requires-all-threads-to-run",
+        "title": "Lazy&lt;T&gt;: &quot;The function evaluation requires all threads to run&quot;",
+        "body": "<p>I have a static class with some static properties. I initialized all of them in a static constructor, but then realized that it is wasteful and I should lazy-load each property when needed. So I switched to using the <code>System.Lazy&lt;T&gt;</code> type to do all the dirty work, and told it to not to use any of its thread safety features since in my case execution was always single threaded.</p>\n\n<p>I ended up with the following class:</p>\n\n<pre><code>public static class Queues\n{\n    private static readonly Lazy&lt;Queue&gt; g_Parser = new Lazy&lt;Queue&gt;(() =&gt; new Queue(Config.ParserQueueName), false);\n    private static readonly Lazy&lt;Queue&gt; g_Distributor = new Lazy&lt;Queue&gt;(() =&gt; new Queue(Config.DistributorQueueName), false);\n    private static readonly Lazy&lt;Queue&gt; g_ConsumerAdapter = new Lazy&lt;Queue&gt;(() =&gt; new Queue(Config.ConsumerAdaptorQueueName), false);\n\n    public static Queue Parser { get { return g_Parser.Value; } }\n    public static Queue Distributor { get { return g_Distributor.Value; } }\n    public static Queue ConsumerAdapter { get { return g_ConsumerAdapter.Value; } }\n}\n</code></pre>\n\n<p>When debugging, I noticed a message I've never seen:</p>\n\n<blockquote>\n  <p>The function evaluation requires all threads to run</p>\n</blockquote>\n\n<p><img src=\"https://i.stack.imgur.com/3pUzQ.jpg\" alt=\"enter image description here\"></p>\n\n<p>Before using <code>Lazy&lt;T&gt;</code>, the values were displayed directly. Now, I need to click on the round button with the threads icon to evaluate the lazy value. This happens only on my properties that are retrieving the <code>.Value</code> of <code>Lazy&lt;T&gt;</code>. When expanding the debugger visualizer node of the actual <code>Lazy&lt;T&gt;</code> object, the <code>Value</code> property simply displays <code>null</code>, without any message.</p>\n\n<p><strong>What does that message mean and why is it displayed in my case?</strong></p>\n"
+      },
+      {
+        "tags": [
+          "angular",
+          "typescript"
+        ],
+        "owner": {
+          "reputation": 1971,
+          "user_id": 51754,
+          "user_type": "registered",
+          "accept_rate": 75,
+          "profile_image": "https://i.stack.imgur.com/qP9ow.jpg?s=128&g=1",
+          "display_name": "Bob Rivers",
+          "link": "https://stackoverflow.com/users/51754/bob-rivers"
+        },
+        "is_answered": false,
+        "view_count": 26,
+        "answer_count": 2,
+        "score": 0,
+        "last_activity_date": 1518826166,
+        "creation_date": 1518823816,
+        "last_edit_date": 1518824948,
+        "question_id": 48836309,
+        "link": "https://stackoverflow.com/questions/48836309/typescript-loop-does-not-work",
+        "title": "Typescript loop does not work",
+        "body": "<p>I'm trying to iterate over an array, but Angular refuses to step in into it...</p>\n\n<p>The array is being filled as follows. As you can see, I'm printing it into the console, and I can see that the array was initialized and filled.</p>\n\n<pre><code>export class CarDetailsComponent implements OnInit, AfterViewInit {\n  cars: Array&lt;Car&gt;;\n\n  constructor(private carService: CarService) {}\n\n  ngOnInit() {\n      this.cars = this.carService.getCars();\n      console.log(this.cars);\n  }\n}\n</code></pre>\n\n<p>The array will be consumed into a <code>ngAfterViewInit()</code>. For debug purposes, the first thing that I did was to check if the array is ok. And it is. But, the console.log inside the loop is never called. Why?</p>\n\n<pre><code>ngAfterViewInit() {\n  console.log(this.cars);\n  for (let i in this.cars) {\n    console.log(i);\n  }\n}\n</code></pre>\n\n<p>I also tried to <code>for..of</code>, <code>this.cars.slice()</code> and everything seems to be ok...</p>\n"
+      },
+      {
+        "tags": [
+          "html",
+          "cordova",
+          "phaser-framework"
+        ],
+        "owner": {
+          "reputation": 191,
+          "user_id": 4363434,
+          "user_type": "registered",
+          "accept_rate": 59,
+          "profile_image": "https://i.stack.imgur.com/P7lgW.jpg?s=128&g=1",
+          "display_name": "Melkor",
+          "link": "https://stackoverflow.com/users/4363434/melkor"
+        },
+        "is_answered": false,
+        "view_count": 2,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826162,
+        "creation_date": 1518826162,
+        "question_id": 48836611,
+        "link": "https://stackoverflow.com/questions/48836611/phaser-mobile-viewport",
+        "title": "Phaser Mobile Viewport",
+        "body": "<p>I am currently creating a puzzle game app using Phaser and Cordova (crosswalk) but I am having some trouble with the meta viewport tags.</p>\n\n<p>Testing the game on my android phone with cordova, no matter what I set my meta viewport tag to, the game is always extremely zoomed in on one small area of the canvas.</p>\n\n<p><a href=\"https://i.stack.imgur.com/D6B25.png\" rel=\"nofollow noreferrer\"><img src=\"https://i.stack.imgur.com/D6B25.png\" alt=\"enter image description here\"></a></p>\n\n<p>However the reason I think this is a viewport problem, is that on chrome, when I set the meta viewport to this:</p>\n\n<pre><code>&lt;meta name=\"viewport\" content=\"user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width\"&gt;\n</code></pre>\n\n<p>I get the exact same problem as in cordova, however when I don't set it at all, or set it to something like this:</p>\n\n<pre><code>&lt;meta name=\"viewport\" content=\"user-scalable=no, width=3000\"&gt;\n</code></pre>\n\n<p>The game runs perfectly fine! How can I fix this so that the game runs normally and not zoomed in in my cordova app?</p>\n\n<p>One final thing I did was add this to my Cordova config file:</p>\n\n<pre><code>&lt;preference name=\"EnableViewportScale\" value=\"true\" /&gt;\n</code></pre>\n\n<p>However this still did not work.</p>\n\n<p><em>Details:</em></p>\n\n<p><em>Phaser version 2.6.2</em></p>\n\n<p><em>Phone model - Samsung Galaxy S7</em></p>\n"
+      },
+      {
+        "tags": [
+          "opengl"
+        ],
+        "owner": {
+          "reputation": 479,
+          "user_id": 1436508,
+          "user_type": "registered",
+          "accept_rate": 38,
+          "profile_image": "https://graph.facebook.com/639133262/picture?type=large",
+          "display_name": "raaj",
+          "link": "https://stackoverflow.com/users/1436508/raaj"
+        },
+        "is_answered": false,
+        "view_count": 2,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826159,
+        "creation_date": 1518826159,
+        "question_id": 48836610,
+        "link": "https://stackoverflow.com/questions/48836610/opengl-rendering-to-multiple-contexts-code",
+        "title": "OpenGL : Rendering to multiple contexts code?",
+        "body": "<p>I have the following code below, where I am trying to launch two threads, so that I can render multiple transformations of my model at once. </p>\n\n<pre><code>const int renderWidth = 640;\nconst int renderHeight = 480;\n\nclass Renderer{\npublic:\n    Renderer(){\n\n    }\n\n    void startOnThread(){\n        // OpenGL - Initialization\n        std::cout &lt;&lt; \"Initializing..\" &lt;&lt; std::endl;\n        char *myargv [1];\n        int myargc=1;\n        myargv[0]=strdup (\"Window\");\n        glutInit(&amp;myargc, myargv);\n        glutInitDisplayMode(GLUT_DOUBLE); // glEndList();Enable double buffered mode\n        glutInitWindowSize(renderWidth, renderHeight);   // Set the window's initial width &amp; height\n        glutInitWindowPosition(50, 50); // Position the window's initial top-left corner\n        glutCreateWindow(\"Window\");          // Create window with the given title\n        glutHideWindow();\n        glewInit();\n\n        glEnable(GL_LIGHTING);\n        glEnable( GL_DEPTH_TEST );\n        glShadeModel( GL_SMOOTH );\n        glEnable( GL_CULL_FACE );\n        glClearColor( 1, 1, 1, 1 );\n    }\n\n    cv::Mat draw(Eigen::MatrixXf mV, Eigen::MatrixXf mF){\n        struct Vertex{\n          GLfloat position[3];\n          GLfloat normal[3];\n          GLfloat texcoord[2];\n        };\n        std::vector&lt;Vertex&gt; vertexdata;\n\n        // Iterate v\n        for(int i=0; i&lt;mV.rows(); i++){\n            Vertex v;\n            for(int j=0; j&lt;mV.cols(); j++){\n                v.position[j] = mV(i,j);\n            }\n            vertexdata.push_back(v);\n        }\n\n        glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );\n        glEnable(GL_LIGHTING);\n        glShadeModel( GL_SMOOTH );\n        glEnable( GL_TEXTURE_2D );\n\n        glViewport( 0, 0, (float)renderWidth/1, (float)renderHeight/1. );\n        glMatrixMode( GL_PROJECTION );\n        glLoadIdentity();\n        gluPerspective( 60, (float)renderWidth/(float)renderHeight, 0.1, 10000. );\n        glMatrixMode( GL_MODELVIEW );\n        glLoadIdentity();\n\n        glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );\n        glPushMatrix();\n        glTranslatef(0,-0.5,-0.5);\n        for(int i=0; i&lt;mF.rows(); i++){\n            glBegin(GL_POLYGON);\n            glVertex3fv((const GLfloat*)&amp;vertexdata[mF(i,0)].position);\n            glVertex3fv((const GLfloat*)&amp;vertexdata[mF(i,1)].position);\n            glVertex3fv((const GLfloat*)&amp;vertexdata[mF(i,2)].position);\n            glEnd();\n        }\n        glPopMatrix();\n\n        // Read buffer test\n        std::vector&lt;std::uint8_t&gt; data(renderWidth*renderHeight*4);\n        glReadBuffer(GL_BACK);\n        glReadPixels(0,0,renderWidth,renderHeight,GL_BGRA,GL_UNSIGNED_BYTE,&amp;data[0]);\n        cv::Mat m(cv::Size(renderWidth, renderHeight),CV_8UC4, &amp;data[0]);\n        cv::flip(m, m, -1);\n\n        glutSwapBuffers();\n        glutPostRedisplay();\n        glutMainLoopEvent();\n\n        return m.clone();\n    }\n\n    /*\n     * Launch 100 threads externally, where each thread starts a renderer, and runs in loop waiting\n     *\n     */\n\n};\n\nvoid thread_worker(const SMPL&amp; smpl){\n    Renderer r;\n    r.startOnThread();\n\n    while(1){\n        std::this_thread::sleep_for(std::chrono::milliseconds(10));\n    }\n\n\n}\n\nint test(){\n\n    SMPL smpl;\n    smpl.loadModelFromJSONFile(std::string(CMAKE_CURRENT_SOURCE_DIR) + \"/model.json\");\n    std::cout.setstate(std::ios_base::failbit);\n    smpl.updateModel();\n    std::cout.clear();\n\n    const int num_threads = 2;\n    std::thread t[num_threads];\n\n    //Launch a group of threads\n    for (int i = 0; i &lt; num_threads; ++i) {\n        t[i] = std::thread(thread_worker, smpl);\n    }\n\n    std::cout &lt;&lt; \"Launched from the main\\n\";\n\n    //Join the threads with the main thread\n    for (int i = 0; i &lt; num_threads; ++i) {\n        t[i].join();\n    }\n}\n</code></pre>\n\n<p>Unfortunately, running this code causes a crash,</p>\n\n<pre><code>Initializing..\n[xcb] Unknown request in queue while dequeuing\n[xcb] Most likely this is a multi-threaded client and XInitThreads has not been called\n[xcb] Aborting, sorry about that.\ntest: ../../src/xcb_io.c:179: dequeue_pending_request: Assertion `!xcb_xlib_unknown_req_in_deq' failed.\nAborted (core dumped)\n</code></pre>\n\n<p>I understand that I need to render off screen somehow. However, setting up frame buffer objects, would still require that I call glutInitWindow..which would still cause the crash. How would I solve this</p>\n"
+      },
+      {
+        "tags": [
+          "java",
+          "maven",
+          "maven-3",
+          "maven-plugin"
+        ],
+        "owner": {
+          "reputation": 5071,
+          "user_id": 1729795,
+          "user_type": "registered",
+          "accept_rate": 82,
+          "profile_image": "https://www.gravatar.com/avatar/13c75bbb8e19632287de96f25a1938ff?s=128&d=identicon&r=PG",
+          "display_name": "codependent",
+          "link": "https://stackoverflow.com/users/1729795/codependent"
+        },
+        "is_answered": false,
+        "view_count": 7,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826157,
+        "creation_date": 1518822301,
+        "last_edit_date": 1518826157,
+        "question_id": 48836091,
+        "link": "https://stackoverflow.com/questions/48836091/developing-a-custom-maven-plugin-shows-no-plugin-found-for-prefix-xxx-in-the-c",
+        "title": "Developing a custom Maven plugin shows No plugin found for prefix &#39;xxx&#39; in the current project and in the plugin groups",
+        "body": "<p>I have developed a custom Maven plugin an installed it on a remote Nexus repository. The jar is correctly uploaded with a pom like this:</p>\n\n<pre><code>&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt; \n&lt;project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"    xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\"&gt;     &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;\n\n    &lt;groupId&gt;something&lt;/groupId&gt;    \n    &lt;artifactId&gt;xxx-maven-plugin&lt;/artifactId&gt;\n    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;   \n    &lt;packaging&gt;maven-plugin&lt;/packaging&gt;\n</code></pre>\n\n<p>The jar contains the necessary plugin.xml file so it looks good.</p>\n\n<p>I have configured a project to use the plugin:</p>\n\n<pre><code>    &lt;plugins&gt;\n        &lt;plugin&gt;\n            &lt;groupId&gt;something&lt;/groupId&gt;\n            &lt;artifactId&gt;xxx-maven-plugin&lt;/artifactId&gt;\n            &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;\n        &lt;/plugin&gt;\n        ...\n</code></pre>\n\n<p>But when I run <code>mvn xxx:mygoal</code> it shows this error:</p>\n\n<pre><code>[ERROR] No plugin found for prefix 'xxx' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (/Users/myuser/.m2/repository), remote-repo (http://someremoterepo/nexus/content/groups/central/)] -&gt; [Help 1]\n</code></pre>\n\n<p>The only thing to make it work is adding the plugin both as a plugin and as a dependency in the project:</p>\n\n<pre><code>    ...\n        &lt;dependency&gt;\n            &lt;groupId&gt;something&lt;/groupId&gt;\n            &lt;artifactId&gt;xxx-maven-plugin&lt;/artifactId&gt;\n            &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;\n        &lt;/dependency&gt;\n    &lt;/dependencies&gt;\n    &lt;plugins&gt;\n        &lt;plugin&gt;\n            &lt;groupId&gt;something&lt;/groupId&gt;\n            &lt;artifactId&gt;xxx-maven-plugin&lt;/artifactId&gt;\n            &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;\n        &lt;/plugin&gt;\n        ...\n</code></pre>\n\n<p>Now it does find the plugin and executes it correctly. What am I doing wrong? I guess it shouldn't be necessary to have it defined both as a plugin and a dependency, the other third party plugins don't have that requirement.</p>\n\n<p><strong>UPDATE:</strong></p>\n\n<p>I have added this to my settings.xml file:</p>\n\n<pre><code>     &lt;pluginGroup&gt;something&lt;/pluginGroup&gt;\n  &lt;/pluginGroups&gt;\n</code></pre>\n\n<p>Now the error is different:</p>\n\n<pre><code>[WARNING] The POM for something:xxx-maven-plugin:jar:1.0.0-SNAPSHOT is missing, no dependency information available\n[WARNING] Failed to retrieve plugin descriptor for something:xxx-maven-plugin:1.0.0-SNAPSHOT: Plugin something:xxx-maven-plugin:1.0.0-SNAPSHOT or one of its dependencies could not be resolved: Could not find artifact something:xxx-maven-plugin:jar:1.0.0-SNAPSHOT\n[WARNING] The POM for something:xxx-maven-plugin:jar:1.0.0-SNAPSHOT is missing, no dependency information available\n...\n[ERROR] Plugin something:xxx-maven-plugin:1.0.0-SNAPSHOT or one of its dependencies could not be resolved: Could not find artifact something:xxx-maven-plugin:jar:1.0.0-SNAPSHOT -&gt; [Help 1]\n</code></pre>\n\n<p>It IS actually in the repo. Again if I explicitly add it as a dependency it does work. ???</p>\n"
+      },
+      {
+        "tags": [
+          "php",
+          "mysql",
+          "github",
+          "udp",
+          "steam"
+        ],
+        "owner": {
+          "reputation": 14,
+          "user_id": 7181227,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/36338a74022bd6ca3921f2528bb38060?s=128&d=identicon&r=PG&f=1",
+          "display_name": "Lewis",
+          "link": "https://stackoverflow.com/users/7181227/lewis"
+        },
+        "is_answered": false,
+        "view_count": 2,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826156,
+        "creation_date": 1518826156,
+        "question_id": 48836609,
+        "link": "https://stackoverflow.com/questions/48836609/getting-connection-refused-error-when-trying-to-connect-to-source-server-throu",
+        "title": "Getting &quot;Connection refused&quot; error when trying to connect to source server through RCON",
+        "body": "<p>The title says most of it. I'm trying to establish a PHP connection to Counter Strike: GO servers, the game uses the source engine and I'm using the library here:\n<a href=\"https://github.com/xPaw/PHP-Source-Query\" rel=\"nofollow noreferrer\">https://github.com/xPaw/PHP-Source-Query</a></p>\n\n<p>I've tested it on a friend's VPS and the code works, however on my GoDaddy server, it doesn't. I supposedly meet all of the requirements on Github (Php 5.5 or newer, phpinfo confirmed gmp is enabled, and GoDaddy support tell me that UDP connections are allowed) - but still I'm getting a connection refused error.</p>\n\n<p>I'm more than happy to attach some code, but as mentioned above, the code seems not to be the issue, so I'm wondering if anyone can offer and general advice as to what may be causing this problem?</p>\n"
       },
       {
         "tags": [
           "python",
-          "platypus"
+          "loops",
+          "while-loop"
         ],
         "owner": {
-          "reputation": 8,
-          "user_id": 8593684,
+          "reputation": 1,
+          "user_id": 9371939,
           "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/0803be583a5dc524780fa9ccf3ba258e?s=128&d=identicon&r=PG&f=1",
-          "display_name": "dz333",
-          "link": "https://stackoverflow.com/users/8593684/dz333"
+          "profile_image": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=128",
+          "display_name": "215dub",
+          "link": "https://stackoverflow.com/users/9371939/215dub"
         },
         "is_answered": false,
-        "view_count": 3,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736745,
-        "creation_date": 1518736745,
-        "question_id": 48817839,
-        "link": "https://stackoverflow.com/questions/48817839/platypus-python",
-        "title": "Platypus Python"
-      },
-      {
-        "tags": [
-          "svn",
-          "commit"
-        ],
-        "owner": {
-          "reputation": 65,
-          "user_id": 5539513,
-          "user_type": "registered",
-          "accept_rate": 64,
-          "profile_image": "https://www.gravatar.com/avatar/790bed9f7c2a87d504b24b18565e1c9a?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Nimral",
-          "link": "https://stackoverflow.com/users/5539513/nimral"
-        },
-        "is_answered": false,
-        "view_count": 4,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736737,
-        "creation_date": 1518736300,
-        "last_edit_date": 1518736737,
-        "question_id": 48817774,
-        "link": "https://stackoverflow.com/questions/48817774/subversion-completely-remove-versions",
-        "title": "Subversion: completely remove versions"
-      },
-      {
-        "tags": [
-          "c++",
-          "variant",
-          "c++17"
-        ],
-        "owner": {
-          "reputation": 149,
-          "user_id": 5021064,
-          "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/8317a437981ab0c212b7679db02eb943?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Denis Yaroshevskiy",
-          "link": "https://stackoverflow.com/users/5021064/denis-yaroshevskiy"
-        },
-        "is_answered": false,
-        "view_count": 62,
+        "view_count": 11,
         "answer_count": 1,
-        "score": 5,
-        "last_activity_date": 1518736737,
-        "creation_date": 1518732435,
-        "last_edit_date": 1518735210,
-        "question_id": 48817080,
-        "link": "https://stackoverflow.com/questions/48817080/why-stdget-for-variant-throws-on-failure-instead-of-being-undefined-behaviour",
-        "title": "Why std::get for variant throws on failure instead of being undefined behaviour?"
+        "score": -1,
+        "last_activity_date": 1518826156,
+        "creation_date": 1518825757,
+        "question_id": 48836565,
+        "link": "https://stackoverflow.com/questions/48836565/python-while-loop-restarting-code-from-the-beginning",
+        "title": "Python while loop restarting code from the beginning",
+        "body": "<p>Need help adding a while loop to my code to start it from the beginning again after the user agrees to it. Every time I add it at the end of the code it skips it when I run it and I'm not sure how to do it at all. Any help is welcomed. Thank you!</p>\n\n<pre><code>print('Welcome to the Dice Game')\nprint(\" \")\nprint('This program will simulate rolling a dice and will track the frequency each value is rolled.')\nprint(\" \")\nprint('After rolling the dice, the program will output a summary table for the session.')\nprint(\" \")\nraw_input(\"Press Enter to continue...\")\n\n# function to roll the dice and get a value\ndef roll_dice():\n    r=random.randint(1,6)\n    return r\n#to track the number of times rolled the dice\nrolled=0\n\n# to track the number of remaining turns\nremaining=10000\n\n# list to store the results\nresult=[]\n\n# to track the number of sessions\nsessions=0\n\nwhile True:\n    #incrementing the session variable\n    sessions+=1\n\n    #getting the number of turns from the user     \n    n=int(input(\"How many times would you like to roll the dice? \"))\n\n\n\n    #checking the number of turns greater than remaining turns or not\n    if n &gt; remaining:\n        print('You have only remaining',remaining)\n        continue\n    #rolling the dice according to the value of n\n    if rolled &lt;= 10000 and n &lt;= remaining :\n        for i in range(n):\n\n            result.append(roll_dice())\n\n    #updating the remaining turns and rolled variables         \n    remaining=remaining-n\n    rolled=rolled+n\n\n\n    #printing the results and session variable\n    if rolled==10000:\n        print('---------------')\n        for i in range(len(result)):\n            print('|{:7d} | {:d} |'.format( i+1,result[i]))\n        print('---------------')\n        print('Rolled 10000 times in %d sessions' % sessions)\n        sys.exit(0)\n</code></pre>\n"
+      },
+      {
+        "tags": [
+          "javascript",
+          "google-apps-script"
+        ],
+        "owner": {
+          "reputation": 1374,
+          "user_id": 7586528,
+          "user_type": "registered",
+          "profile_image": "https://lh6.googleusercontent.com/-mMLrf353xDE/AAAAAAAAAAI/AAAAAAAAAGQ/qP9z84xqOgM/photo.jpg?sz=128",
+          "display_name": "Anton Dementiev",
+          "link": "https://stackoverflow.com/users/7586528/anton-dementiev"
+        },
+        "is_answered": false,
+        "view_count": 14,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1518826146,
+        "creation_date": 1518802722,
+        "last_edit_date": 1518803086,
+        "question_id": 48832128,
+        "link": "https://stackoverflow.com/questions/48832128/driveapp-searching-for-folders-with-non-latin-names",
+        "title": "DriveApp: searching for folders with non-Latin names",
+        "body": "<p>I ran into what seems to be an issue inside <strong>'getFoldersByName()'</strong> method of the <strong>Folder</strong> class. If I pass a Cyrillic string as an argument, it returns the instance of <strong>FolderIterator</strong> as it should, but calling the <strong>'next()'</strong> method always throws an error ('iterator has reached the end'). </p>\n\n<p>The function below finds the subfolder with a given name inside the parent folder and returns the subfolder. If the subfolder already exists, the function returns it instead of creating a new one. Unfortunately, this only works with Latin subfolder names.</p>\n\n<pre><code>function findSubfolder(){\n\n  var subfolderName = \"Папка папка\";  //string containing cyrillic characters\n\n  var parentFolder = DriveApp.getFolderById(parentFolderId);\n\n  var iterator = parentFolder.getFoldersByName(subfolderName);\n\n  var folder = (iterator.hasNext()) ? iterator.next() : parentFolder.createFolder(subfolderName);\n\nreturn folder;\n\n}\n</code></pre>\n\n<p>It's worth mentioning that when I check <em>(existingSubfolder.getName() == subfolderName)</em> it returns 'true'.</p>\n"
+      },
+      {
+        "tags": [
+          "c#",
+          "asp.net",
+          "browser",
+          "console"
+        ],
+        "owner": {
+          "reputation": 6,
+          "user_id": 9362566,
+          "user_type": "registered",
+          "profile_image": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=128",
+          "display_name": "Vanish Asm",
+          "link": "https://stackoverflow.com/users/9362566/vanish-asm"
+        },
+        "is_answered": false,
+        "view_count": 19,
+        "closed_date": 1518795364,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826144,
+        "creation_date": 1518792721,
+        "last_edit_date": 1518826144,
+        "question_id": 48829280,
+        "link": "https://stackoverflow.com/questions/48829280/use-browser-as-console-asp-net-website",
+        "closed_reason": "too broad",
+        "title": "Use browser as Console ASP.net WebSite",
+        "body": "<p>Is there a way so I can use browser (or an element on the website) as a console to communicate with asp.net code on the server, just like we use windows console to talk to offline application? For example: I want to write a code     <code>string text =Console.Readline(); Console.WriteLine(text)</code> and I want that code to work just as it would be a console application (Optionally there might be a triggering button for readline or whatever). I tried to use textbox as a console, but since the function must end to trigger page rendering (here i mean to trigger the postback that updates box.text's state) textboxes dont work, same goes with updatepanel, sounds good doesn't work. </p>\n\n<p>To clarify, how can i use/is there any way to use console.readline and console.writeline on asp.net website (with .aspx extnesion)? </p>\n\n<p>PS I Am talking about asp.net website, not application. </p>\n"
+      },
+      {
+        "tags": [
+          "javascript",
+          "php",
+          "ajax"
+        ],
+        "owner": {
+          "reputation": 20,
+          "user_id": 8734075,
+          "user_type": "registered",
+          "accept_rate": 0,
+          "profile_image": "https://www.gravatar.com/avatar/350d10a229a611de16da98fecbb82ad8?s=128&d=identicon&r=PG&f=1",
+          "display_name": "MKUltra",
+          "link": "https://stackoverflow.com/users/8734075/mkultra"
+        },
+        "is_answered": false,
+        "view_count": 21,
+        "answer_count": 2,
+        "score": 0,
+        "last_activity_date": 1518826143,
+        "creation_date": 1518824938,
+        "question_id": 48836468,
+        "link": "https://stackoverflow.com/questions/48836468/receiving-data-from-javascript-into-php",
+        "title": "Receiving data from JavaScript into PHP",
+        "body": "<p>I'm using AJAX in javascript to send a JSON string to PHP. </p>\n\n<p>I'm not familiar with AJAX, javascript or php, so this is taking me a while to get started. </p>\n\n<p>I have a html file with a username field, password field, and login button. </p>\n\n<p>Then I have a javascript file that takes the username pass and sends it to a php file. </p>\n\n<p>I know the php file is being accessed because I am seeing the test echo in console. </p>\n\n<p>I just cant figure out how to access the data I'm sending to the php. </p>\n\n<p>script.</p>\n\n<pre><code>function attemptLogin(){\n\nvar inputUserName = JSON.stringify(document.getElementById(\"userName\").value);\n\n\nvar ajaxData = new XMLHttpRequest();\najaxData.open('GET', 'ajax.php', true);\najaxData.onreadystatechange = function(){\n\n    var DONE = 4;\n    var OK = 200;\n\n    if (ajaxData.readyState === DONE) {\n        if (ajaxData.status === OK) {\n            console.log(ajaxData.responseText);\n        }else{\n            console.log(\"ERROR : \" + ajaxData.status);\n        }\n    }\n};\najaxData.send(inputUserName);\n}\n</code></pre>\n\n<p>ajax.php</p>\n\n<pre><code>&lt;?php\n    echo\"TestInPHP\";\n?&gt;\n</code></pre>\n\n<p>For now all I want to do is echo the username back to console, I'm sure the syntax is something simple, I just cant figure out what it is. </p>\n"
+      },
+      {
+        "tags": [
+          "python-3.x",
+          "notepad++"
+        ],
+        "owner": {
+          "reputation": 12,
+          "user_id": 8885213,
+          "user_type": "registered",
+          "accept_rate": 75,
+          "profile_image": "https://www.gravatar.com/avatar/609e951f65a04903baad0dcdeaadbb6d?s=128&d=identicon&r=PG&f=1",
+          "display_name": "Djaenike",
+          "link": "https://stackoverflow.com/users/8885213/djaenike"
+        },
+        "is_answered": true,
+        "view_count": 31,
+        "answer_count": 1,
+        "score": 1,
+        "last_activity_date": 1518826143,
+        "creation_date": 1518818192,
+        "last_edit_date": 1518826143,
+        "question_id": 48835431,
+        "link": "https://stackoverflow.com/questions/48835431/collapsing-grouping-several-lines-of-code",
+        "title": "Collapsing/grouping several lines of code",
+        "body": "<p>I am using this piece of code for about 30 different facilities:</p>\n\n<pre><code>#Facility 1 emails\npath = 'C:\\\\path\\\\tofolder'\nnewpath1 = str(path)+str(theyear)\nif not os.path.exists(newpath1):\n        os.makedirs(newpath1)\n\nnewpath = str(newpath1)+'\\\\'+str(name)+' '+str(theyear)\nif not os.path.exists(newpath):\n        os.makedirs(newpath)\n\npat = str(newpath)+'\\\\*'\nif any(os.path.isfile(file) for file in glob.glob(pat)) or today.day &lt; 20:\n    print(\"Tank inspection not due\")\nelse:\n    fromaddr = 'email@gmail.com'\n    toaddrs  = 'email2@gmail.com'\n    SUBJECT = \"Tank inspections\"\n    TEXT = 'Our records indicate that you have not yet completed the inspection'\n    message = 'Subject: {}\\n\\n{}'.format(SUBJECT, TEXT)\n    username = 'email@gmail.com'\n    password = 'pass'\n    server = smtplib.SMTP('smtp.gmail.com:587')\n    server.ehlo()\n    server.starttls()\n    server.login(username,password)\n    server.sendmail(fromaddr, toaddrs, message)\n    server.quit()\n</code></pre>\n\n<p>The code works fine, however, I have about 900 lines of code that I need to traverse.  Is there any way to group this piece of code so I can collapse it to be able to navigate better?  I'm using notepad++ and very new to python, so I'm not sure if this technique is available.  Right now the only code I can collapse are the if statements.</p>\n"
+      },
+      {
+        "tags": [
+          "string",
+          "design-patterns",
+          "lua"
+        ],
+        "owner": {
+          "reputation": 11,
+          "user_id": 9366777,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/6119f6bdf93ef9b9d8747283028e4c39?s=128&d=identicon&r=PG&f=1",
+          "display_name": "LumiJay",
+          "link": "https://stackoverflow.com/users/9366777/lumijay"
+        },
+        "is_answered": false,
+        "view_count": 10,
+        "answer_count": 1,
+        "score": 1,
+        "last_activity_date": 1518826124,
+        "creation_date": 1518818147,
+        "question_id": 48835418,
+        "link": "https://stackoverflow.com/questions/48835418/lua-simpler-string-pattern-solution",
+        "title": "LUA: Simpler string pattern solution",
+        "body": "<p>I'm studying LUA on my own and would like a little help on this next piece of code:</p>\n\n<pre><code>offset= \"1h2m3s4f\"\n\noff_h = offset:match(\"(%d+)h\")\noff_m = offset:match(\"(%d+)m\")\noff_s = offset:match(\"(%d+)s\")\noff_f = offset:match(\"(%d+)f\")\n\nprint(off_h)\nprint(off_m)\nprint(off_s)\nprint(off_f)\n</code></pre>\n\n<p>I've tried everything to concat the pattern into a single line offset:match but after reading many ressources online I am still clueless how to do it.\nThe problem is, the user might enter only 2m3s4f without any numbers for h or\nhe might enter only 1m2f. </p>\n\n<p>My tests on a single pattern check were resulting in full nil values when I removed one of the pattern condition. I tried adding the magic char ? to the different patterns but that didn't do the trick.\nAny pointer would be appreciated!\nThanks,</p>\n"
+      },
+      {
+        "tags": [
+          "xamarin.forms",
+          "uwp"
+        ],
+        "owner": {
+          "reputation": 1714,
+          "user_id": 492482,
+          "user_type": "registered",
+          "accept_rate": 72,
+          "profile_image": "https://www.gravatar.com/avatar/c5d99b3cfb389c0b439851242982900c?s=128&d=identicon&r=PG",
+          "display_name": "batmaci",
+          "link": "https://stackoverflow.com/users/492482/batmaci"
+        },
+        "is_answered": false,
+        "view_count": 9,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826118,
+        "creation_date": 1518821817,
+        "last_edit_date": 1518826118,
+        "question_id": 48836026,
+        "link": "https://stackoverflow.com/questions/48836026/uwp-falls-creators-update-and-mobile-app",
+        "title": "UWP falls creators update and mobile app?",
+        "body": "<p>I am having UWP app in the store which supports mobile and desktop. min version as  10240 and target version 15063. Now I want to update to falls creator update with 16299. my Project is a xamarin forms project and i had recently upgraded to .net standard 2.0. I learnt that i must use min version as 16299 (falls creator update).\nProblem is that Falls Creator update doesnt support any Mobile application. In order to support older versions of UWP, i must downgrade to .net standard 1.4.\n my questions is;</p>\n\n<p>is there a huge difference between 2.0 and 1.4. will I get performance decrease and lose some good benefits? or is there a way to use multiple .net standard versions within the same solutions like? Shared project 2.0, Android 2.0, IOS 2.0, UWP 1.4 ?</p>\n"
+      },
+      {
+        "tags": [
+          "html",
+          "css",
+          "flexbox",
+          "bootstrap-4"
+        ],
+        "owner": {
+          "reputation": 187,
+          "user_id": 2297313,
+          "user_type": "registered",
+          "accept_rate": 95,
+          "profile_image": "https://www.gravatar.com/avatar/109cd8704c97c3fb3451c09218b5fc12?s=128&d=identicon&r=PG",
+          "display_name": "Derrek Whistle",
+          "link": "https://stackoverflow.com/users/2297313/derrek-whistle"
+        },
+        "is_answered": false,
+        "view_count": 12,
+        "closed_date": 1518826095,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826112,
+        "creation_date": 1518810376,
+        "last_edit_date": 1518810688,
+        "question_id": 48833826,
+        "link": "https://stackoverflow.com/questions/48833826/bootstrap-4-flexbox-behavior-in-ie-11",
+        "closed_reason": "duplicate",
+        "title": "Bootstrap 4 Flexbox behavior in IE 11",
+        "body": "<p>If you run the following JSFiddle in Chrome/Firefox, you'll notice that the text inside the first blue box does not overflow into the second.  However, in IE11, the text in the first blue box overflows into the second.</p>\n\n<pre><code>&lt;div class=\"flexrow\"&gt;\n   &lt;div class=\"flexcol\"&gt;\n\n    Greetings!\n\n   &lt;/div&gt;\n   &lt;div class=\"item flexcol\"&gt;\n\n      &lt;div class=\"item\"&gt;\n        hello\n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  \n        hello  hello  hello  hello  hello  hello\n     &lt;/div&gt;\n  &lt;div class=\"item\"&gt;\n    how are you\n  &lt;/div&gt;\n\n   &lt;/div&gt;\n&lt;/div&gt;\n</code></pre>\n\n<p>Is there a way to make it so that the overflow does not take place in IE11?</p>\n\n<p><a href=\"https://jsfiddle.net/zbq5kn74/3/\" rel=\"nofollow noreferrer\">https://jsfiddle.net/zbq5kn74/3/</a></p>\n\n<p>Thanks.</p>\n"
+      },
+      {
+        "tags": [
+          "c#",
+          "arrays",
+          "data-structures",
+          "data-stream"
+        ],
+        "owner": {
+          "reputation": 1,
+          "user_id": 9119341,
+          "user_type": "registered",
+          "profile_image": "https://lh4.googleusercontent.com/-gFVBY0cSzNA/AAAAAAAAAAI/AAAAAAAAAB8/D95WEuZssPs/photo.jpg?sz=128",
+          "display_name": "I Drink Gasoline",
+          "link": "https://stackoverflow.com/users/9119341/i-drink-gasoline"
+        },
+        "is_answered": false,
+        "view_count": 21,
+        "answer_count": 0,
+        "score": -5,
+        "last_activity_date": 1518826107,
+        "creation_date": 1518823275,
+        "last_edit_date": 1518826107,
+        "question_id": 48836237,
+        "link": "https://stackoverflow.com/questions/48836237/how-to-split-byte-array-into-mutiple-byte-array-packets-max-64-bytes",
+        "title": "How to split byte array into mutiple byte array packets (max 64 bytes)",
+        "body": "<p>I have a struct of data i am sending as a byte array \"packet\" but the max allowed packet size is 64 bytes. If i want to send more than 64 bytes and have it arrive as one coherent package what would be the best method? I need to be able to code the interpretation of this packet entirely in c but it is outgoing from c#</p>\n\n<p>Here is some of my code to explain better:</p>\n\n<pre><code>byte[] intBytes = new byte[64];\nfor (int i = Marshal.SizeOf(packet) + 1; i &lt; 64; i++)\n            {\n                intBytes[i] = 0;\n            }\n            SendData(intBytes);\n</code></pre>\n\n<p>currently i have a packet of bytes that i add to this intBytes array and fill the rest with 0 to meet the 64  bytes requirement</p>\n\n<p>Any ideas how i can change this to instead take an array of larger than 64 bytes and split it to multiple packets to send that can be later re joined after receiving?</p>\n\n<p>EDIT: My god why is this being down voted so much still? I added code! What is so wrong with asking a simple question about splitting and merging byte arrays!?!?!?</p>\n"
+      },
+      {
+        "tags": [
+          "regex"
+        ],
+        "owner": {
+          "reputation": 1,
+          "user_id": 4522394,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/547916ecede945df2b1fc97a322aadf0?s=128&d=identicon&r=PG&f=1",
+          "display_name": "binsworth",
+          "link": "https://stackoverflow.com/users/4522394/binsworth"
+        },
+        "is_answered": false,
+        "view_count": 9,
+        "closed_date": 1518821381,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826107,
+        "creation_date": 1518821308,
+        "last_edit_date": 1518826107,
+        "question_id": 48835941,
+        "link": "https://stackoverflow.com/questions/48835941/regex-match-list-of-words-and-another-word",
+        "closed_reason": "duplicate",
+        "title": "regex match list of words and another word",
+        "body": "<p>I am searching text files that contain:</p>\n\n<p>-any word in this list (build|tune|scrap)<br />\n-and one more specific word (engine)</p>\n\n<p>The text files have CRLF as line endings.</p>\n\n<p>I've cobbled together the following regex, which matches when <code>engine</code> is on the same line as one of the first three:<br />\n<code>(?=.*\\b(build|tune|scrap)\\b).*(?=.*\\b(engine)\\b)</code></p>\n\n<p>edit: \nI've tried the suggested duplicate post.  The files I am searching have CRLF line endings, so I believe my regex should have \\r\\n someplace, but I have been unable to get it to find <code>engine</code> in the rest of the text (i.e. on other lines)  when there's a <code>build</code>, <code>tune</code> or <code>scrap</code> anywhere else.\n<code>(?=.*\\b(build|tune|scrap)\\b)((.|\\n|\\r)*)(?=.*\\b(engine)\\b)</code>\n<code>(?=.*\\b(build|tune|scrap)\\b)((|\\n|\\r))(?=.*\\b(engine)\\b)</code></p>\n\n<p>Thanks.</p>\n"
+      },
+      {
+        "tags": [
+          "elm"
+        ],
+        "owner": {
+          "reputation": 97,
+          "user_id": 2088861,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/184a836537321a34415eb79fe8d7b5c9?s=128&d=identicon&r=PG",
+          "display_name": "Mahdi",
+          "link": "https://stackoverflow.com/users/2088861/mahdi"
+        },
+        "is_answered": true,
+        "view_count": 4305,
+        "accepted_answer_id": 34362880,
+        "answer_count": 5,
+        "score": 18,
+        "last_activity_date": 1518826104,
+        "creation_date": 1450467181,
+        "last_edit_date": 1456682527,
+        "question_id": 34362681,
+        "link": "https://stackoverflow.com/questions/34362681/string-to-int-conversion-using-toint-function",
+        "title": "String to int conversion using toInt function",
+        "body": "<p>I am trying to convert a string  to integer using String.toInt. However, when I want to bind the result to a variable and then do some simple math with it I get this error:</p>\n\n<blockquote>\n  <p>Function <code>add</code> is expecting the 2nd argument to be:</p>\n\n<pre><code>Int\n</code></pre>\n  \n  <p>But it is:</p>\n\n<pre><code>Result String Int\n</code></pre>\n</blockquote>\n\n<p>How can I just extract the integer part of the result?</p>\n"
+      },
+      {
+        "tags": [
+          "python",
+          "python-import",
+          "git-submodules",
+          "conventions",
+          "pylint"
+        ],
+        "owner": {
+          "reputation": 1569,
+          "user_id": 1795505,
+          "user_type": "registered",
+          "profile_image": "https://i.stack.imgur.com/7mj1s.png?s=128&g=1",
+          "display_name": "pydsigner",
+          "link": "https://stackoverflow.com/users/1795505/pydsigner"
+        },
+        "is_answered": false,
+        "view_count": 2,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1518826101,
+        "creation_date": 1518826101,
+        "question_id": 48836604,
+        "link": "https://stackoverflow.com/questions/48836604/avoiding-pylint-complaints-when-importing-python-packages-from-submodules",
+        "title": "Avoiding pylint complaints when importing Python packages from submodules",
+        "body": "<p><strong>Background</strong></p>\n\n<p>I have a Python application dependent upon another package which is provided as a git submodule, yielding a directory structure similar to the following:</p>\n\n<pre><code>foo/\n    bar/\n        bar/\n            __init__.py\n            eggs.py\n        test/\n        setup.py\n    foo/\n        __init__.py\n        ham.py\n    main.py\n</code></pre>\n\n<p>Accessing the <code>foo</code> package is simple enough, as <code>main.py</code> is executed from the toplevel <code>foo/</code> directory; but the <code>bar</code> package is nested within another <code>bar</code> directory and is not directly importable.</p>\n\n<p>This is solvable readily enough, by modifying <code>sys.path</code> at the beginning of <code>main.py</code>:</p>\n\n<pre><code>import sys\n\n# Or sys.path.append()\nsys.path.insert(0, './bar')\n\nfrom bar.eggs import Eggs\nfrom foo.ham import Ham\n</code></pre>\n\n<p><strong>The Problem</strong></p>\n\n<p>Unfortunately, pylint doesn't like this solution. While the code works, the linter considers the <code>sys.path</code> modifications to be a block of code ending the \"top of the module\" and gives an undesirable <code>wrong-import-position</code> warning:</p>\n\n<pre><code>C: 6, 0: Import \"from bar.eggs import Eggs\" should be placed at the top of the module (wrong-import-position)\nC: 7, 0: Import \"from foo.ham import Ham\" should be placed at the top of the module (wrong-import-position)\n</code></pre>\n\n<hr>\n\n<p><strong>Similar questions</strong></p>\n\n<p><a href=\"https://stackoverflow.com/questions/44732819/adding-a-path-to-sys-path-in-python-and-pylint\">Adding a path to sys.path in python and pylint</a></p>\n\n<p>This questioner has an issue with pylint failing to correctly parse the imports altogether. The lone answer to the this question suggests adding to pylint's internal path; this does nothing to avoid complaints about an interleaved <code>sys.path</code> modification.</p>\n"
       },
       {
         "tags": [
           "ruby",
-          "postgresql",
-          "sequel"
+          "watir-webdriver"
         ],
         "owner": {
-          "reputation": 168,
-          "user_id": 4200859,
+          "reputation": 3,
+          "user_id": 6607078,
           "user_type": "registered",
-          "accept_rate": 39,
-          "profile_image": "https://www.gravatar.com/avatar/72fe764d26ac6cb9d3a5bbeaa45fc1be?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Max",
-          "link": "https://stackoverflow.com/users/4200859/max"
+          "profile_image": "https://www.gravatar.com/avatar/4b625ee65d1596da2b93da436aef555e?s=128&d=identicon&r=PG&f=1",
+          "display_name": "Ashokkumar",
+          "link": "https://stackoverflow.com/users/6607078/ashokkumar"
+        },
+        "is_answered": true,
+        "view_count": 107,
+        "accepted_answer_id": 38452692,
+        "answer_count": 1,
+        "score": -1,
+        "last_activity_date": 1518826084,
+        "creation_date": 1468913648,
+        "last_edit_date": 1518826084,
+        "question_id": 38452172,
+        "link": "https://stackoverflow.com/questions/38452172/web-table-scroll-is-not-working-watir-webdriver",
+        "title": "web table scroll is not working watir webdriver",
+        "body": "<p>I need to scroll the table in webpage and get the particular text. But scrolling table is not working</p>\n\n<p>I have a table in webpage with 21 rows where only 10 rows are visible.If we want to see remaining rows then we need to scroll down. Also if i give below command in irb to get the length then it shows 10 rows only but there are 21 rows in that table</p>\n\n<pre><code>irb(main):177:0&gt; @browser.div(:class =&gt; 'table-container',:index =&gt;1).tables(:class =&gt; 'row-table').length\n=&gt; 10\n</code></pre>\n\n<p>If i tried to get the text in row 19, then it shows error unable to locate element. </p>\n\n<p>Also i have used scroll command as below but scroll is not working:</p>\n\n<pre><code>@browser.div(:class=&gt;'mainContainer2').table(:id =&gt; 'row-table').div(:text=&gt;/#{data}/).wd.location_once_scrolled_into_view\n</code></pre>\n\n<p>When i give the above command in irb window after i manually scrolled the table once then only above command is working.</p>\n\n<p>Also i have tried to iterate and check each row in a table to match the expected text but there also it iterates and checks only 10 rows which are visible.</p>\n"
+      },
+      {
+        "tags": [
+          "javascript",
+          "jquery",
+          "html",
+          "css"
+        ],
+        "owner": {
+          "reputation": 59,
+          "user_id": 8139445,
+          "user_type": "registered",
+          "accept_rate": 92,
+          "profile_image": "https://www.gravatar.com/avatar/f6d2de2f6343acee479f743e31d4a5f9?s=128&d=identicon&r=PG&f=1",
+          "display_name": "FatTwin",
+          "link": "https://stackoverflow.com/users/8139445/fattwin"
+        },
+        "is_answered": false,
+        "view_count": 11,
+        "answer_count": 2,
+        "score": 0,
+        "last_activity_date": 1518826080,
+        "creation_date": 1518825452,
+        "last_edit_date": 1518825829,
+        "question_id": 48836538,
+        "link": "https://stackoverflow.com/questions/48836538/enlarge-centered-image-in-a-table",
+        "title": "Enlarge centered image in a table",
+        "body": "<p>I am slowly getting crazy, that's for sure.</p>\n\n<p>To my problem: I created a table and I'm trying to resize an image within a cell to the full width of the cell itself. For whatever reason, this is not working. I have googled my fingers sweaty with no solution that worked. In theory, they all should have. </p>\n\n<p>Here is the code:</p>\n\n<p><div class=\"snippet\" data-lang=\"js\" data-hide=\"false\" data-console=\"true\" data-babel=\"false\">\r\n<div class=\"snippet-code\">\r\n<pre class=\"snippet-code-css lang-css prettyprint-override\"><code>.column {\r\n    float: left;\r\n    width: 50%;\r\n    padding: 10px;\r\n}\r\n\r\n/* Clear floats after the columns */\r\n.row:after {\r\n    content: \"\";\r\n    display: table;\r\n    clear: both;\r\n}</code></pre>\r\n<pre class=\"snippet-code-html lang-html prettyprint-override\"><code>&lt;div class=\"row\"&gt;\r\n  &lt;div class=\"column\" style=\"background-color:#aaa;text-align:center;\"&gt;\r\n    &lt;div&gt;&lt;img src=\"http://via.placeholder.com/165x550\"&gt;&lt;/div&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n  &lt;/div&gt;\r\n  &lt;div class=\"column\" style=\"background-color:#bbb;\"&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n  &lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"row\"&gt;\r\n  &lt;div class=\"column\" style=\"background-color:#aaa;\"&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n  &lt;/div&gt;\r\n  &lt;div class=\"column\" style=\"background-color:#bbb;\"&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n    &lt;p&gt;Some text..&lt;/p&gt;\r\n  &lt;/div&gt;\r\n&lt;/div&gt;</code></pre>\r\n</div>\r\n</div>\r\n</p>\n"
+      },
+      {
+        "tags": [
+          "java",
+          "arraylist"
+        ],
+        "owner": {
+          "reputation": 8,
+          "user_id": 8748204,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/050f3cb9968ce4b42163bb4d444a595c?s=128&d=identicon&r=PG&f=1",
+          "display_name": "Mi Le",
+          "link": "https://stackoverflow.com/users/8748204/mi-le"
+        },
+        "is_answered": false,
+        "view_count": 22,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1518826078,
+        "creation_date": 1518821045,
+        "question_id": 48835891,
+        "link": "https://stackoverflow.com/questions/48835891/adding-a-new-element-to-arraylist-only-when-a-limit-is-reached",
+        "title": "Adding a new element to arraylist only when a limit is reached",
+        "body": "<p>I am trying to write a receive() method for a warehouse class but is not displaying the result I want. The main method is this:</p>\n\n<pre><code>public static void main( String[] args )\n{\n    Warehouse w = new Warehouse( 10 ); \n    Footwear d0 = new DressShoe( \"Loafer\", 10.5, \"1234-13\" ); \n    Footwear b = new Boot( \"Riding\", 8, \"1234-5\" ); \n    Footwear c = new CasualShoe( \"Sandal\", 9.5, \"1234-0\" ); \n    Footwear d1 = new DressShoe( \"Wing-tip\", 10, \"1234-3\" ); \n    w.receive( d0, 4 ); \n    w.receive( b, 25 ); \n    w.receive( c, 18 ); \n    w.receive( d1, 5 ); \n    System.out.println(w);\n}\n</code></pre>\n\n<p>I want the it to print this where each Bin should only have total quantity of 10 (quantity is the number farthest right). </p>\n\n<pre><code>Bin B0:\nDress Shoe – Loafer (size 10½), SKU 1234-13: 4\nCasual Shoe – Sandal (size 9½), SKU 1234-0: 6\nBin B1:\nBoot – Riding (size 8), SKU 1234-5: 10\nBin B2:\nBoot – Riding (size 8), SKU 1234-5: 10\nBin B3:\nBoot – Riding (size 8), SKU 1234-5: 5\nCasual Shoe – Sandal (size 9½), SKU 1234-0: 2\nDress Shoe – Wing-tip (size 10), SKU 1234-3: 3\nBin B4:\nCasual Shoe – Sandal (size 9½), SKU 1234-0: 10\nBin B5:\nDress Shoe – Wing-tip (size 10), SKU 1234-3: 2\n</code></pre>\n\n<p>but mine doesn't print any other than \"Dress Shoe – Loafer (size 10½)\" and it won't create a new Bin when the total quantity is 10. Mine just looks like</p>\n\n<pre><code>Bin B0:\nDress Shoe - Loafer (size 10½), SKU 1234-13: 52\nBin B1:\nDress Shoe - Loafer (size 10½), SKU 1234-13: 48\nBin B2:\nDress Shoe - Loafer (size 10½), SKU 1234-13: 23\nBin B3:\nDress Shoe - Loafer (size 10½), SKU 1234-13: 5\nBin B4:\n</code></pre>\n\n<p>These are my classes so far.</p>\n\n<pre><code>public class Warehouse\n{\nprivate int myBinMax;\nprivate ArrayList&lt;Footwear&gt; myCatalog;\nprivate ArrayList&lt;Bin&gt; myBins;\n\npublic Warehouse(int binMax)\n{\n    myBinMax = binMax;\n    myCatalog = new ArrayList&lt;Footwear&gt;();\n    myBins = new ArrayList&lt;Bin&gt;(5);\n    for(int i=0; i&lt;5; i++)\n    {\n        addBin();\n    }\n}\npublic void addBin()\n{\n    myBins.add( new Bin( \"B\" + myBins.size() ) );\n}\npublic String toString()\n{\n    String s = \"\";\n    for ( Bin bin : myBins )\n    {\n        s += \"Bin \" + bin.getName() + \":\\n\";\n        for (int i = 0; i &lt; bin.getContents().size(); i++) {\n            s += Lab04Runner.lookupFootwear(myCatalog, \n          bin.getContents().get(i).getSKU()) + \", \" + \n          bin.getContents().get(i) + \"\\n\";\n        }\n    }\n    return s;\n}\npublic void receive(Footwear object, int a)\n{\n    if (!myCatalog.contains(object))\n    {\n        myCatalog.add(object);\n    }\n    int min = Integer.MAX_VALUE;\n    String name;\n    for (Bin bin : myBins)\n    {\n        for( int i =0; i&lt;myCatalog.size(); i++)\n        {\n        if (bin.totalQuantity() &lt; min)\n        {\n            if (bin.totalQuantity() == 0)\n            {\n                min = 0;\n                name = bin.getName();\n                BinItem bi = new BinItem(myCatalog.get(i).getSKU(), a);    \n                bin.add(bi);\n            }\n            else\n            {\n                min = bin.totalQuantity();\n                name = bin.getName();\n                BinItem bi = new BinItem(myCatalog.get(i).getSKU(), a);    \n                bin.add(bi);\n            }\n            if (bin.totalQuantity() == myBinMax)\n            {\n                addBin();\n                name = myBins.get(myBins.size() - 1).getName();\n                BinItem bi = new BinItem( myCatalog.get(i).getSKU(), \n                  a);\n                myBins.get(myBins.size()-1).add(bi);\n            }\n        }\n    }\n    }\n}\n}\n\npublic class Lab04Runner\n{\npublic static String lookupFootwear( ArrayList&lt;Footwear&gt; catalog, \nString sku )\n{\n    int n = Integer.parseInt(sku.replace(\"-\", \"\"));\n    for ( Footwear fw : catalog )\n    {\n        if (n &lt;= 123499 &amp;&amp; n &gt;= 12340)\n        {\n            return \"\" + fw;\n        }\n    }\n\n    return \"SKU \" + sku + \" not in catalog\";\n}\n\npublic class Footwear\n{\nprivate String myStyle;\nprivate double mySize;\nprivate String mySKU;\npublic Footwear(String s, double r, String k)\n{\n    myStyle = s;\n    mySize = r;\n    mySKU = k;\n}\npublic String getStyle()\n{\n    return myStyle;\n}\npublic double getSize()\n{\n    return mySize;\n}\npublic String getSKU()\n{\n    return mySKU;\n}\npublic String getType()\n{\n    return \"Unspecified\";\n}\npublic String printSize()\n{\n    if (mySize - (int)mySize == 0)\n    {\n        return \"\" +(int)mySize;\n    }\n    else\n    {\n        return \"\" +(int)mySize + \"\\u00bd\";\n    }\n}    \npublic String toString()\n{\n    return getType() + \" - \" + getStyle() + \" (size \" + printSize() + \n\")\";\n}\npublic class Bin\n{\nprivate String myName;\nprivate ArrayList&lt;BinItem&gt; myContents;\n\npublic Bin( String name )\n{\n    myName = name;\n    myContents = new ArrayList&lt;BinItem&gt;();\n}\npublic String getName() \n{\n    return myName; \n}\npublic ArrayList&lt;BinItem&gt; getContents()\n{\n    return myContents;\n}\npublic void remove( int i )\n{\n    myContents.remove( i );\n}\npublic int totalQuantity()\n{\n    int total = 0;\n    for ( BinItem b : myContents )\n    {\n        total += b.getQuantity();\n    }\n    return total;\n}\npublic void add( BinItem b )\n{\n    String sku = b.getSKU();\n    int n = b.getQuantity();\n    BinItem item;\n    for ( int i = 0; i &lt; myContents.size(); i++ )\n    {\n        item = myContents.get( i );\n        if ( sku.equals( item.getSKU() ) )\n        {\n            int m = item.getQuantity();\n            myContents.remove( i );\n            myContents.add( new BinItem( sku, m+n ) );\n            return;\n        }\n    }\n\n    myContents.add( b );\n}\npublic String toString()\n{\n    String s = \"Bin \" + myName + \":\";\n    for ( BinItem b : myContents )\n    {\n        s += \"\\n\" + b;\n    }\n    return s;\n}\npublic class BinItem\n{\nprivate String mySKU;\nprivate int myQuantity;\n\npublic BinItem(String sku, int quantity)\n{\n    mySKU = sku;\n    myQuantity = quantity;\n}\n\npublic String getSKU()\n{\n    return mySKU;\n}\n\npublic int getQuantity()\n{\n    return myQuantity;\n}\n\npublic String toString()\n{\n    return \"SKU \" + getSKU() + \": \" + getQuantity();\n}  \n}\n</code></pre>\n\n<p>How would I stop it from adding and instead add a new element to the arraylist? Also how do I get it to print the other objects and not just the first one?</p>\n"
+      },
+      {
+        "tags": [
+          "keras",
+          "lstm",
+          "rnn"
+        ],
+        "owner": {
+          "reputation": 1,
+          "user_id": 9263510,
+          "user_type": "registered",
+          "profile_image": "https://graph.facebook.com/595277774147091/picture?type=large",
+          "display_name": "David ",
+          "link": "https://stackoverflow.com/users/9263510/david"
+        },
+        "is_answered": false,
+        "view_count": 5,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1518826076,
+        "creation_date": 1518819352,
+        "last_edit_date": 1518826076,
+        "question_id": 48835614,
+        "link": "https://stackoverflow.com/questions/48835614/keras-lstm-rnn-for-classification",
+        "title": "Keras LSTM RNN for Classification",
+        "body": "<p>I created a simple example in which 2 machines fail as soon as they receive their third sensor rating of 25pts or higher. However, after hours of trying differing LSTM models in keras, all my models want to categorize all my samples as all true, or all false.  </p>\n\n<p>Can anyone point me in the right direction for detecting a rule like this?</p>\n\n<p>It’s 2 machines with about 20ish time stamps and only 2 sensors (X1, X2).</p>\n\n<p><a href=\"https://i.stack.imgur.com/qQrEj.png\" rel=\"nofollow noreferrer\">My data</a></p>\n\n<p>Sequence Length = 10 time steps\nThis gives 23 “windows” or samples, each of of which is 10 time steps long.</p>\n\n<p>The Confusion Matrix always ends up as:</p>\n\n<p>array([[ 0, 15],\n       [ 0,  8]])</p>\n\n<p>The Y is simply a “getting close to failure” subjective measurement that I saw other preventative maintenance examples use, with great results. I should be able to get 100% accuracy given I imposed my own rule here. </p>\n\n<hr>\n\n<p>Here is one version of my model, but regardless of layers or neurons or epochs, I get all true or all false. I also tried with just 1 LSTM instead of 2. Same results. </p>\n\n<pre><code>nb_features = seq_array.shape[2] #this is 2\nnb_out = label_array.shape[1]  #this is 1\n\nmodel = Sequential()\n\nmodel.add(LSTM(\n     input_shape=(sequence_length, nb_features),\n     units=20,\n     return_sequences=True))\n\nmodel.add(LSTM(\nunits=10,\n     return_sequences=False))\n\nmodel.add(Dense(units=20,activation='relu'))\nmodel.add(Dense(units=20,activation='relu'))\nmodel.add(Dense(units=10,activation='relu'))\nmodel.add(Dense(units=1,activation='softmax'))\nmodel.compile(loss='binary_crossentropy', optimizer='adam', metrics=    ['accuracy'])\n</code></pre>\n\n<p>The data file is here ---> <a href=\"https://github.com/dclengacher/test-repo/blob/master/ten_machines.csv\" rel=\"nofollow noreferrer\">https://github.com/dclengacher/test-repo/blob/master/ten_machines.csv</a></p>\n"
+      },
+      {
+        "tags": [
+          "java"
+        ],
+        "owner": {
+          "reputation": 4,
+          "user_id": 9371709,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/cb4dc0e4b5c605bdd153371829bb008d?s=128&d=identicon&r=PG&f=1",
+          "display_name": "ashish",
+          "link": "https://stackoverflow.com/users/9371709/ashish"
+        },
+        "is_answered": false,
+        "view_count": 31,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1518826071,
+        "creation_date": 1518821240,
+        "question_id": 48835929,
+        "link": "https://stackoverflow.com/questions/48835929/completing-the-star-pattern",
+        "title": "Completing the star pattern",
+        "body": "<p>I was unable to print the complete star pattern. I want to print</p>\n\n<pre><code>       *\n      * *\n * * * * * * *\n  * *     * *\n   *       *\n  * *     * *\n * * * * * * *\n      * *\n       *\n</code></pre>\n\n<p>Problem with my code is I cannot figure out how to print first part of 4th and 5th row.\nMy code:</p>\n\n<pre><code>    //print A\n       int i, j, k = 0,n=2;\n    for (i = 1; i &lt;= n; i++) \n    {\n        // Print spaces\n        for (j = 7; j &gt; i; j--) {\n            System.out.print(\" \");\n        }\n        // Print *\n        while (k != (2 * i - 1)) {\n            if (k == 0 || k == 2 * i - 2)\n                System.out.print(\"*\");\n            else\n                System.out.print(\" \");\n            k++;\n            ;\n        }\n        k = 0;\n\n        // print next row\n        System.out.println(); \n    }\n\n//print middle line\n    for(i=0;i&lt;7;i++)\n    {\n    System.out.print(\"* \");\n    }\n    System.out.println();\n\n\n\n\n//print V\nint hight=2;\nint rowLen = (hight-1)*2;\n\nfor(i=0; i&lt;hight; i++){\n\n\n    //print space\n    for(int s=11;s&gt;hight;s--)\n    {\n\n        {\n        System.out.print(\" \");\n        }\n    }\n\n    //print *\n    int start = i;\n    int end = rowLen-i;\n    for(j=0;j&lt;=rowLen; j++){\n        if(j==end){\n            System.out.println(\"*\");\n            break;\n        }\n        else if(j==start){\n            System.out.print(\"*\");\n        }\n        else{\n            System.out.print(\" \");\n        }\n\n    }\n\n}\n\n\n\n\nfor(i=0;i&lt;12;i++)\n    {\n    if(i==1 || i==3 || i==9 || i==11)\n    {\n        System.out.print(\"*\");\n    }\n    else\n    {\n        System.out.print(\" \");\n    }\n    }\nSystem.out.println();   \n\n\n\n\n//print middle line\n    for(i=0;i&lt;7;i++)\n    {\n    System.out.print(\"* \");\n    }\n    System.out.println();\n\n\n\n\n        //print V\nint hight1=2;\nint rowLen1 = (hight1-1)*2;\n\nfor(i=0; i&lt;hight1; i++){\n\n\n    //print space\n    for(int s=7;s&gt;hight1;s--)\n    {\n        System.out.print(\" \");\n    }\n\n\n    //print *\n    int start1 = i;\n    int end1 = rowLen1-i;\n    for(j=0;j&lt;=rowLen1; j++){\n        if(j==end1){\n            System.out.println(\"*\");\n            break;\n        }\n        else if(j==start1){\n            System.out.print(\"*\");\n        }\n        else{\n            System.out.print(\" \");\n        }\n\n    }\n\n}\n</code></pre>\n\n<p>Using the above code i was able to get this o/p</p>\n\n<pre><code>       *\n      * *\n * * * * * * *\n          * *\n           *\n  * *     * *\n * * * * * * *\n      * *\n       *\n</code></pre>\n\n<p>What code should be added to line 46-52 to complete the star. Also if possible please tell if my code meet the programming standards. I am a rookie though.</p>\n"
+      },
+      {
+        "tags": [
+          "ios",
+          "swift"
+        ],
+        "owner": {
+          "reputation": 350,
+          "user_id": 4555604,
+          "user_type": "registered",
+          "accept_rate": 57,
+          "profile_image": "https://www.gravatar.com/avatar/dbb9cb9c32d43a6a53b8e951301b5ac2?s=128&d=identicon&r=PG&f=1",
+          "display_name": "LampPost",
+          "link": "https://stackoverflow.com/users/4555604/lamppost"
         },
         "is_answered": false,
         "view_count": 10,
         "answer_count": 1,
         "score": 0,
-        "last_activity_date": 1518736736,
-        "creation_date": 1518654653,
-        "question_id": 48798437,
-        "link": "https://stackoverflow.com/questions/48798437/sequel-gem-postgres-performance-handling-large-set-at-once-vs-small-set",
-        "title": "Sequel gem + postgres performance handling large set at once vs. small set"
-      },
-      {
-        "tags": [
-          "database",
-          "laravel",
-          "union"
-        ],
-        "owner": {
-          "reputation": 1229,
-          "user_id": 2874407,
-          "user_type": "registered",
-          "accept_rate": 83,
-          "profile_image": "https://www.gravatar.com/avatar/846df4262273ac7d1f9d05aec6d8d302?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Timo G&#252;ntner",
-          "link": "https://stackoverflow.com/users/2874407/timo-g%c3%bcntner"
-        },
-        "is_answered": true,
-        "view_count": 5,
-        "answer_count": 1,
-        "score": 1,
-        "last_activity_date": 1518736734,
-        "creation_date": 1518735962,
-        "question_id": 48817719,
-        "link": "https://stackoverflow.com/questions/48817719/union-with-two-queries-returns-call-to-undefined-method-stdclassunion-erro",
-        "title": "Union with two queries returns &quot;Call to undefined method stdClass::union()&quot; error"
-      },
-      {
-        "tags": [
-          "asp.net-mvc",
-          "asp.net-core",
-          "iis-express"
-        ],
-        "owner": {
-          "reputation": 21,
-          "user_id": 6906935,
-          "user_type": "registered",
-          "accept_rate": 83,
-          "profile_image": "https://www.gravatar.com/avatar/359cdb5c5d079e1739ad66e41d12f508?s=128&d=identicon&r=PG&f=1",
-          "display_name": "maynard",
-          "link": "https://stackoverflow.com/users/6906935/maynard"
-        },
-        "is_answered": false,
-        "view_count": 13,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736729,
-        "creation_date": 1518726119,
-        "last_edit_date": 1518736729,
-        "question_id": 48815630,
-        "link": "https://stackoverflow.com/questions/48815630/getting-502-3-errors-due-to-large-response-in-asp-net-core-1-1",
-        "title": "getting 502.3 errors due to large response in asp.net core 1.1"
-      },
-      {
-        "tags": [
-          "javascript",
-          "angularjs",
-          "angular-material"
-        ],
-        "owner": {
-          "reputation": 145,
-          "user_id": 4802584,
-          "user_type": "registered",
-          "accept_rate": 55,
-          "profile_image": "https://www.gravatar.com/avatar/d8f48f904639b2a2ad00d1f1f65d7e52?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Ramana Uday",
-          "link": "https://stackoverflow.com/users/4802584/ramana-uday"
-        },
-        "is_answered": true,
-        "view_count": 676,
-        "answer_count": 1,
-        "score": 0,
-        "last_activity_date": 1518736724,
-        "creation_date": 1491829193,
-        "last_edit_date": 1518736724,
-        "question_id": 43323855,
-        "link": "https://stackoverflow.com/questions/43323855/angular-material-design-mddialog-prompt-is-not-a-function",
-        "title": "Angular Material Design $mdDialog.prompt is not a function"
-      },
-      {
-        "tags": [
-          "javascript",
-          "c#",
-          "asp.net",
-          "ajax",
-          "wcf"
-        ],
-        "owner": {
-          "reputation": 6,
-          "user_id": 9364540,
-          "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/40185c28240b02bc4736a32fea0ab012?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Christian",
-          "link": "https://stackoverflow.com/users/9364540/christian"
-        },
-        "is_answered": false,
-        "view_count": 21,
-        "answer_count": 1,
-        "score": 1,
-        "last_activity_date": 1518736723,
-        "creation_date": 1518694316,
-        "last_edit_date": 1518701982,
-        "question_id": 48806218,
-        "link": "https://stackoverflow.com/questions/48806218/wcf-service-post-method-not-working",
-        "title": "WCF service POST method not working"
-      },
-      {
-        "tags": [
-          "xml",
-          "algorithm",
-          "powershell",
-          "sorting",
-          "array-algorithms"
-        ],
-        "owner": {
-          "reputation": 16,
-          "user_id": 9365808,
-          "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/7a1d5bb41dab0315530238ed4ade7c31?s=128&d=identicon&r=PG&f=1",
-          "display_name": "JimB",
-          "link": "https://stackoverflow.com/users/9365808/jimb"
-        },
-        "is_answered": false,
-        "view_count": 31,
-        "answer_count": 1,
-        "score": 3,
-        "last_activity_date": 1518736718,
-        "creation_date": 1518712827,
-        "last_edit_date": 1518716497,
-        "question_id": 48812185,
-        "link": "https://stackoverflow.com/questions/48812185/sorting-algorithm-for-xml-attribute-mutual-value-pairs",
-        "title": "Sorting Algorithm for XML attribute mutual value pairs"
-      },
-      {
-        "tags": [
-          "python",
-          "python-3.x",
-          "input",
-          "boolean"
-        ],
-        "owner": {
-          "reputation": 26,
-          "user_id": 5556453,
-          "user_type": "registered",
-          "accept_rate": 40,
-          "profile_image": "https://www.gravatar.com/avatar/769766eb89592aac1422c5b30b3249e6?s=128&d=identicon&r=PG&f=1",
-          "display_name": "user5556453",
-          "link": "https://stackoverflow.com/users/5556453/user5556453"
-        },
-        "is_answered": true,
-        "view_count": 34,
-        "answer_count": 4,
-        "score": 0,
-        "last_activity_date": 1518736715,
-        "creation_date": 1518734319,
-        "last_edit_date": 1518734413,
-        "question_id": 48817461,
-        "link": "https://stackoverflow.com/questions/48817461/user-input-boolean-in-python",
-        "title": "User input boolean in python"
-      },
-      {
-        "tags": [
-          "ruby-on-rails",
-          "devise"
-        ],
-        "owner": {
-          "reputation": 618,
-          "user_id": 1290457,
-          "user_type": "registered",
-          "accept_rate": 43,
-          "profile_image": "https://www.gravatar.com/avatar/121ff7202cde3e23e2c73ff3078b5a15?s=128&d=identicon&r=PG",
-          "display_name": "sandre89",
-          "link": "https://stackoverflow.com/users/1290457/sandre89"
-        },
-        "is_answered": false,
-        "view_count": 2,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736715,
-        "creation_date": 1518736715,
-        "question_id": 48817836,
-        "link": "https://stackoverflow.com/questions/48817836/rails-devise-calling-super-inside-authenticate-group-raises-no-superclass-meth",
-        "title": "Rails Devise: calling super inside authenticate_group! raises no superclass method `authenticate_group!` in Controller"
-      },
-      {
-        "tags": [
-          "r"
-        ],
-        "owner": {
-          "reputation": 800,
-          "user_id": 5919561,
-          "user_type": "registered",
-          "accept_rate": 83,
-          "profile_image": "https://www.gravatar.com/avatar/b008619cfd8503c2c7cc599f4282ce28?s=128&d=identicon&r=PG&f=1",
-          "display_name": "nik",
-          "link": "https://stackoverflow.com/users/5919561/nik"
-        },
-        "is_answered": false,
-        "view_count": 4,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736714,
-        "creation_date": 1518736714,
-        "question_id": 48817834,
-        "link": "https://stackoverflow.com/questions/48817834/how-can-i-remove-an-average-from-each-number-and-get-average-from-certain-region",
-        "title": "how can I remove an average from each number and get average from certain region"
-      },
-      {
-        "tags": [
-          "jquery",
-          "wordpress"
-        ],
-        "owner": {
-          "reputation": 82,
-          "user_id": 2536102,
-          "user_type": "registered",
-          "accept_rate": 63,
-          "profile_image": "https://www.gravatar.com/avatar/31622071d8e639f1d6dfdb9aa070c29d?s=128&d=identicon&r=PG",
-          "display_name": "Mekong",
-          "link": "https://stackoverflow.com/users/2536102/mekong"
-        },
-        "is_answered": false,
-        "view_count": 19,
-        "answer_count": 1,
-        "score": 0,
-        "last_activity_date": 1518736711,
-        "creation_date": 1518670319,
-        "question_id": 48800137,
-        "link": "https://stackoverflow.com/questions/48800137/wordpress-jquery-error-preventing-plugin-from-running",
-        "title": "Wordpress jQuery Error preventing plugin from running"
-      },
-      {
-        "tags": [
-          "javascript",
-          "angular",
-          "typescript",
-          "primeng"
-        ],
-        "owner": {
-          "reputation": 242,
-          "user_id": 5245070,
-          "user_type": "registered",
-          "accept_rate": 86,
-          "profile_image": "https://www.gravatar.com/avatar/a02c1ad88a017ab7a105cf84282c85f4?s=128&d=identicon&r=PG&f=1",
-          "display_name": "progx",
-          "link": "https://stackoverflow.com/users/5245070/progx"
-        },
-        "is_answered": false,
-        "view_count": 15,
-        "answer_count": 1,
-        "score": 2,
-        "last_activity_date": 1518736708,
-        "creation_date": 1518730861,
-        "last_edit_date": 1518732316,
-        "question_id": 48816759,
-        "link": "https://stackoverflow.com/questions/48816759/how-to-expand-multiple-panels-properly",
-        "title": "How to expand multiple panels properly?"
-      },
-      {
-        "tags": [
-          "javascript",
-          "jquery",
-          "html",
-          "dom"
-        ],
-        "owner": {
-          "reputation": 63,
-          "user_id": 5504364,
-          "user_type": "registered",
-          "accept_rate": 43,
-          "profile_image": "https://www.gravatar.com/avatar/7ec9bfe39235b1e35dcfbc92b3eb60e4?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Wini the Pooh",
-          "link": "https://stackoverflow.com/users/5504364/wini-the-pooh"
-        },
-        "is_answered": true,
-        "view_count": 18,
-        "answer_count": 4,
-        "score": 0,
-        "last_activity_date": 1518736693,
-        "creation_date": 1518735785,
-        "last_edit_date": 1518735923,
-        "question_id": 48817700,
-        "link": "https://stackoverflow.com/questions/48817700/call-function-once-on-page-load-and-then-everytime-when-user-clicks",
-        "title": "Call function once on page load and then everytime when user clicks"
-      },
-      {
-        "tags": [
-          "opendaylight"
-        ],
-        "owner": {
-          "reputation": 9,
-          "user_id": 8882204,
-          "user_type": "registered",
-          "accept_rate": 100,
-          "profile_image": "https://i.stack.imgur.com/YMShV.jpg?s=128&g=1",
-          "display_name": "Kevin Costa",
-          "link": "https://stackoverflow.com/users/8882204/kevin-costa"
-        },
-        "is_answered": false,
-        "view_count": 2,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736690,
-        "creation_date": 1518736690,
-        "question_id": 48817830,
-        "link": "https://stackoverflow.com/questions/48817830/how-can-i-create-a-application-in-opendaylight-using-the-nitrogen-archtype",
-        "title": "How can i create a application in opendaylight using the nitrogen archtype"
-      },
-      {
-        "tags": [
-          "javascript",
-          "json"
-        ],
-        "owner": {
-          "reputation": 6,
-          "user_id": 7033409,
-          "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/fbbc8987da358082e93d30218129f5ad?s=128&d=identicon&r=PG&f=1",
-          "display_name": "tony",
-          "link": "https://stackoverflow.com/users/7033409/tony"
-        },
-        "is_answered": false,
-        "view_count": 21,
-        "answer_count": 2,
-        "score": -3,
-        "last_activity_date": 1518736685,
-        "creation_date": 1518735693,
-        "question_id": 48817686,
-        "link": "https://stackoverflow.com/questions/48817686/how-to-change-json-into-string",
-        "title": "How to change JSON into string"
-      },
-      {
-        "tags": [
-          "json",
-          "angularjs",
-          "angularjs-directive",
-          "factory"
-        ],
-        "owner": {
-          "reputation": 145,
-          "user_id": 4802584,
-          "user_type": "registered",
-          "accept_rate": 55,
-          "profile_image": "https://www.gravatar.com/avatar/d8f48f904639b2a2ad00d1f1f65d7e52?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Ramana Uday",
-          "link": "https://stackoverflow.com/users/4802584/ramana-uday"
-        },
-        "is_answered": true,
-        "view_count": 570,
-        "accepted_answer_id": 30396995,
-        "answer_count": 2,
-        "score": 0,
-        "last_activity_date": 1518736676,
-        "creation_date": 1432297030,
-        "last_edit_date": 1518736676,
-        "question_id": 30396533,
-        "link": "https://stackoverflow.com/questions/30396533/load-json-data-into-the-factory-file",
-        "title": "Load json data into the factory file"
-      },
-      {
-        "tags": [
-          "pandas"
-        ],
-        "owner": {
-          "reputation": 1632,
-          "user_id": 189035,
-          "user_type": "registered",
-          "accept_rate": 98,
-          "profile_image": "https://www.gravatar.com/avatar/39c115a166788050ce9f1d1f5eacdd96?s=128&d=identicon&r=PG",
-          "display_name": "user189035",
-          "link": "https://stackoverflow.com/users/189035/user189035"
-        },
-        "is_answered": false,
-        "view_count": 3,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736670,
-        "creation_date": 1518736670,
-        "question_id": 48817828,
-        "link": "https://stackoverflow.com/questions/48817828/pandas-expanding-window-and-apply-a-bivariate-lambda-function",
-        "title": "Pandas, .expanding() window and .apply() a bivariate lambda function"
-      },
-      {
-        "tags": [
-          "wordpress",
-          "overflow"
-        ],
-        "owner": {
-          "reputation": 3,
-          "user_id": 8611757,
-          "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/02e12b2366e3fe7271d297907502e2ba?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Timitom",
-          "link": "https://stackoverflow.com/users/8611757/timitom"
-        },
-        "is_answered": false,
-        "view_count": 4,
-        "answer_count": 0,
-        "score": 0,
-        "last_activity_date": 1518736668,
-        "creation_date": 1518730950,
-        "last_edit_date": 1518736668,
-        "question_id": 48816786,
-        "link": "https://stackoverflow.com/questions/48816786/animatie-wordpress-titles-right-to-left-once-they-overflow",
-        "title": "Animatie Wordpress titles right to left once they overflow"
+        "last_activity_date": 1518826066,
+        "creation_date": 1518824299,
+        "question_id": 48836379,
+        "link": "https://stackoverflow.com/questions/48836379/adding-custom-back-button-not-working-to-uinavigationbar",
+        "title": "Adding custom back button not working to UINavigationBar",
+        "body": "<p>I'm trying to add a custom back button to my navigation controller but it doesn't function correctly. </p>\n\n<pre><code>func setupNavBarItems() {\n    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)\n    self.navigationController?.navigationBar.shadowImage = UIImage()\n    self.navigationController?.navigationBar.isTranslucent = true\n    self.navigationController?.view.backgroundColor = UIColor.clear\n\n    let backButton = UIButton(type: .system)\n    backButton.setImage(#imageLiteral(resourceName: \"icon_back\"), for: .normal)\n    navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)\n}\n</code></pre>\n\n<p>And I have also tried this without any luck (I replaced the bottom 2 lines with the following code)</p>\n\n<pre><code>    let backButton = UIButton(type: .system)\n    backButton.setImage(#imageLiteral(resourceName: \"icon_back\"), for: .normal)\n    let backBarButton = UIBarButtonItem.init(customView: backButton)\n    navigationItem.setLeftBarButton(backBarButton, animated: true)\n</code></pre>\n\n<p>I see the custom button image but the it won't trigger the back button action. </p>\n"
       }
     ],
     "has_more": true,
     "quota_max": 10000,
-    "quota_remaining": 9983
+    "quota_remaining": 9927
   },
   "question": {
     "items": [
       {
         "tags": [
-          "python",
-          "reactjs",
-          "selenium"
+          "c++",
+          "cuda",
+          "clang",
+          "c++1z"
         ],
         "owner": {
-          "reputation": 35,
-          "user_id": 7253453,
+          "reputation": 613,
+          "user_id": 4069571,
           "user_type": "registered",
-          "profile_image": "https://www.gravatar.com/avatar/795cacfbe305ae408f91afefba6945d9?s=128&d=identicon&r=PG&f=1",
-          "display_name": "Bobs Burgers",
-          "link": "https://stackoverflow.com/users/7253453/bobs-burgers"
+          "accept_rate": 88,
+          "profile_image": "https://i.stack.imgur.com/UwoxX.jpg?s=128&g=1",
+          "display_name": "GPMueller",
+          "link": "https://stackoverflow.com/users/4069571/gpmueller"
         },
-        "is_answered": true,
-        "view_count": 43,
-        "accepted_answer_id": 48816304,
+        "is_answered": false,
+        "view_count": 111,
         "answer_count": 1,
-        "score": 1,
-        "last_activity_date": 1518799485,
-        "creation_date": 1518722638,
-        "last_edit_date": 1518799485,
-        "question_id": 48814810,
-        "link": "https://stackoverflow.com/questions/48814810/python-access-react-props-using-selenium",
-        "title": "Python - Access React Props using Selenium"
+        "score": 6,
+        "last_activity_date": 1518826181,
+        "creation_date": 1514111037,
+        "question_id": 47959767,
+        "link": "https://stackoverflow.com/questions/47959767/can-c17-be-used-together-with-cuda-using-clang",
+        "title": "Can C++17 be used together with CUDA using clang?",
+        "body": "<p>As far as using <code>nvcc</code>, one needs to use the corresponding <code>gcc</code> (currently max. 5.4 I believe) in conjunction. This of course somewhat prevents one from using C++17 on the host side.</p>\n\n<p>Since C++17 can be compiled using <code>clang 5</code> and upwards (see <a href=\"http://clang.llvm.org/cxx_status.html\" rel=\"noreferrer\">here</a>), and one can compile cuda code as well (see <a href=\"http://llvm.org/docs/CompileCudaWithLLVM.html\" rel=\"noreferrer\">here</a>), <strong>is it possible to use both C++17 and CUDA at the same time</strong> (or can there be problems, e.g. with the CUDA runtime)?</p>\n"
       }
     ],
     "has_more": false,
     "quota_max": 10000,
-    "quota_remaining": 9991
+    "quota_remaining": 9915
   }
 }
