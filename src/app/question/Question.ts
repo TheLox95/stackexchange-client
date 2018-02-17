@@ -11,6 +11,15 @@ export class Question {
     private _link: string;
     private _title: string;
 
+	public get body(): string {
+		return this._body;
+	}
+
+	public set body(value: string) {
+		this._body = value;
+	}
+    private _body: string;
+
 	public get tags(): string[] {
 		return this._tags;
 	}

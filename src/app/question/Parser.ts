@@ -14,6 +14,7 @@ export default class Parser{
         question.question_id = item.question_id;
         question.link = item.link;
         question.creation_date = item.creation_date;
+        question.body = item.body;
 
         return question;
 
