@@ -11,13 +11,13 @@ import { QuestionService } from './question.service';
     <p>
     {{_question?.title}}
     </p>
-    <p [innerHtml]="_question?.body">    
+    <p [innerHtml]="_question?.body">
     </p>
   `,
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent {
-  private _question;
+  _question;
 
   constructor(private route: ActivatedRoute, private service: QuestionService) {
     this.route.params.subscribe(id => this.fetchQuestion(id));

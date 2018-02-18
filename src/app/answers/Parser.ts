@@ -1,5 +1,5 @@
 import { Answer } from "./Answer";
-import OwnerParser from "../Owner/parser";
+import OwnerParser from "../owner/Parser";
 import { AnswersEntity } from "../definitions/StackExchangeApi";
 
 export default class Parser {

@@ -9,23 +9,19 @@ import { Observable } from 'rxjs/Observable';
   template: `<p>
   question-list works!
 </p>
-  <ul *ngFor="let question of _questions$ | async">
-    <li><a [innerHTML]="question.title" routerLink="/question/{{question.question_id}}" >  </a></li>
+  <ul *ngFor="let questionObj of questions$ | async">
+    <li><a [innerHTML]="questionObj.title" routerLink="/question/{{questionObj.question_id}}" >  </a></li>
 </ul>
 `,
   styleUrls: ['./question-list.component.css']
 })
 export class QuestionListComponent implements OnInit {
-  _questions$ : Observable<Question[]>;
+  questions$ : Observable<Question[]>;
 
-  constructor(private questionService: QuestionService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private questionService: QuestionService) { }
 
   ngOnInit() {
-    this._questions$ = this.questionService.getList();
-  }
-
-  showmeQuestion(){
-    //this.router.navigate(['/question'], {queryParams: {id: 5}, skipLocationChange: true});
+    this.questions$ = this.questionService.getList();
   }
 
 

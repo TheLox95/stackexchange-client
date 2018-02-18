@@ -1,6 +1,10 @@
+import {RouterLinkStubDirective, RouterOutletStubComponent} from '../router-stubs';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { QuestionComponent } from './question.component';
+import { QuestionService } from './question.service';
+import { MockQuestionService } from './MockQuestionService';
 
 describe('QuestionComponent', () => {
   let component: QuestionComponent;
@@ -8,7 +12,9 @@ describe('QuestionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuestionComponent ]
+      imports: [RouterTestingModule],
+      declarations: [ QuestionComponent],
+      providers: [{ provide: QuestionService, useClass: MockQuestionService }]
     })
     .compileComponents();
   }));
