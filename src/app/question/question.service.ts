@@ -40,7 +40,9 @@ export class QuestionService implements QuestionServiceInterface{
   }
 
   setEmptyArrayForPropertyInObject(property: string, object: {}) {
-    object[property] = [];
+    if(object[property] == undefined){
+      object[property] = [];
+    }
     return object;
   }
 }
