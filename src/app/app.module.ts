@@ -8,7 +8,7 @@ import { QuestionListComponent } from './question/question-list/question-list.co
 import { AppRoutingModule } from './/app-routing.module';
 import { QuestionService } from './question/question.service';
 import { QuestionModule } from './question/question.module';
-
+import {SuiModule} from 'ng2-semantic-ui';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { QuestionModule } from './question/question.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    QuestionModule
+    QuestionModule,
+    SuiModule
   ],
   providers: [QuestionService],
   bootstrap: [AppComponent]
