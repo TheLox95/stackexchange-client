@@ -1,7 +1,7 @@
 import { AnswersEntity, CommentsEntity, Owner } from "../definitions/StackExchangeApi";
 	
 export class Answer implements AnswersEntity{
-    private _comm]ents?: CommentsEntity[];
+    private _comments?: CommentsEntity[];
     private _owner: Owner;
     private _is_accepted: boolean;
     private _score: number;

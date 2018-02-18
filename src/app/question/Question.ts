@@ -27,7 +27,7 @@ export class Question {
 	public set tags(value: string[]) {
 		this._tags = value;
 	}
-    
+
 
 	public get is_answered(): boolean {
 		return this._is_answered;
@@ -36,7 +36,7 @@ export class Question {
 	public set is_answered(value: boolean) {
 		this._is_answered = value;
 	}
-    
+
 
 	public get view_count(): number {
 		return this._view_count;
@@ -45,7 +45,7 @@ export class Question {
 	public set view_count(value: number) {
 		this._view_count = value;
 	}
-    
+
 
 	public get answer_count(): number {
 		return this._answer_count;
@@ -54,7 +54,7 @@ export class Question {
 	public set answer_count(value: number) {
 		this._answer_count = value;
 	}
-    
+
 
 	public get score(): number {
 		return this._score;
@@ -63,7 +63,7 @@ export class Question {
 	public set score(value: number) {
 		this._score = value;
 	}
-    
+
 
 	public get last_activity_date(): number {
 		return this._last_activity_date;
@@ -72,7 +72,7 @@ export class Question {
 	public set last_activity_date(value: number) {
 		this._last_activity_date = value;
 	}
-    
+
 
 	public get creation_date(): number {
 		return this._creation_date;
@@ -81,7 +81,7 @@ export class Question {
 	public set creation_date(value: number) {
 		this._creation_date = value;
 	}
-    
+
 
 	public get question_id(): number {
 		return this._id;
@@ -90,7 +90,7 @@ export class Question {
 	public set question_id(value: number) {
 		this._id = value;
 	}
-    
+
 
 	public get link(): string {
 		return this._link;
@@ -99,7 +99,7 @@ export class Question {
 	public set link(value: string) {
 		this._link = value;
 	}
-    
+
 
 	public get title(): string {
 		return this._title;
@@ -108,5 +108,5 @@ export class Question {
 	public set title(value: string) {
 		this._title = value;
 	}
-    
+
 }

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/Observable';
   selector: 'app-question-list',
   template: `<p>
   question-list works!
-</p>  
+</p>
   <ul *ngFor="let question of _questions$ | async">
     <li><a [innerHTML]="question.title" routerLink="/question/{{question.question_id}}" >  </a></li>
 </ul>
@@ -16,7 +16,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./question-list.component.css']
 })
 export class QuestionListComponent implements OnInit {
-  private _questions$ : Observable<Question[]>;
+  _questions$ : Observable<Question[]>;
 
   constructor(private questionService: QuestionService, private route: ActivatedRoute, private router: Router) { }
 
