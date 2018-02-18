@@ -18,8 +18,7 @@ import {SuiModule} from 'ng2-semantic-ui';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    QuestionModule,
-    SuiModule
+    QuestionModule
   ],
   providers: [QuestionService],
   bootstrap: [AppComponent]
