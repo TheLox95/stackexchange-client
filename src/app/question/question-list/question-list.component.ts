@@ -15,9 +15,7 @@ export interface IContext {
 
 @Component({
   selector: "app-question-list",
-  template: `<p>
-  question-list works!
-</p>
+  template: `
   <ul *ngFor="let questionObj of questions$ | async">
     <li><a [innerHTML]="questionObj.title" (click)="open(questionObj)"></a></li>
     <ng-template let-context let-modal="modal" #modalTemplate>
