@@ -7,6 +7,8 @@ import { QuestionRoutingModule } from './question-routing.module';
 import { QuestionListComponent } from './question-list/question-list.component';
 import { SuiModule } from 'ng2-semantic-ui';
 import { MiniOwnerComponent } from '../owner/mini-owner/mini-owner.component';
+import { CommentComponent } from '../comment/comment/comment.component';
+import { AnswerComponent } from '../answers/answer/answer.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { MiniOwnerComponent } from '../owner/mini-owner/mini-owner.component';
   declarations: [
     QuestionListComponent,
     QuestionComponent,
-    MiniOwnerComponent
+    MiniOwnerComponent,
+    CommentComponent,
+    AnswerComponent
   ],
   providers: [ QuestionService ]
 })
