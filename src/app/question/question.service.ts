@@ -32,6 +32,11 @@ export class QuestionService implements QuestionServiceInterface{
     res.items.map(item =>
       this.setEmptyArrayForPropertyInObject("answers", item)
     );
+
+    res.items.map(item =>
+      item.answers.map(answer => this.setEmptyArrayForPropertyInObject("comments", answer))
+    );
+
     return res.items.map(parser.parse);
   }
 

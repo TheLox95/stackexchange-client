@@ -37,7 +37,8 @@ export class MockQuestionService implements QuestionServiceInterface{
         1518716844,
         48813371,
         48813300,
-        "<p>You're including the newline in the string you read from the file. You want </p>\n\n<p><code>x = file.readline().strip()</code></p>\n"
+        "<p>You're including the newline in the string you read from the file. You want </p>\n\n<p><code>x = file.readline().strip()</code></p>\n",
+        [comment2]
       );
       const question: Question = new Question(
         48813300,
@@ -93,7 +94,8 @@ export class MockQuestionService implements QuestionServiceInterface{
         1518716844,
         48813371,
         48813300,
-        "<p>You're including the newline in the string you read from the file. You want </p>\n\n<p><code>x = file.readline().strip()</code></p>\n"
+        "<p>You're including the newline in the string you read from the file. You want </p>\n\n<p><code>x = file.readline().strip()</code></p>\n",
+        [comment2]
       );
       const question: Question = new Question(
         48813300,

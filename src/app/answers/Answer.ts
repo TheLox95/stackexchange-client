@@ -1,5 +1,5 @@
 import { AnswersEntity, CommentsEntity, Owner } from "../definitions/StackExchangeApi";
-	
+
 export class Answer implements AnswersEntity{
     private _comments?: CommentsEntity[];
     private _owner: Owner;
@@ -12,7 +12,7 @@ export class Answer implements AnswersEntity{
     private _body: string;
     private _last_edit_date?: number;
 
-    constructor(owner: Owner, is_accepted: boolean, score: number, last_activity_date: number, creation_date: number, answer_id: number, question_id: number, body: string) {
+    constructor(owner: Owner, is_accepted: boolean, score: number, last_activity_date: number, creation_date: number, answer_id: number, question_id: number, body: string, comments: CommentsEntity[]) {
 		this._owner = owner;
 		this._is_accepted = is_accepted;
 		this._score = score;
@@ -21,6 +21,7 @@ export class Answer implements AnswersEntity{
 		this._answer_id = answer_id;
 		this._question_id = question_id;
 		this._body = body;
+		this._comments = comments;
 	}
 
 	public get owner(): Owner {
@@ -53,6 +54,10 @@ export class Answer implements AnswersEntity{
 
 	public get body(): string {
 		return this._body;
+  }
+
+  public get comments(): CommentsEntity[] {
+		return this._comments;
 	}
 
 }
