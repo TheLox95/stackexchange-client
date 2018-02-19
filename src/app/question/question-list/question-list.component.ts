@@ -16,8 +16,14 @@ export interface IContext {
 @Component({
   selector: "app-question-list",
   template: `
-  <ul *ngFor="let questionObj of questions$ | async">
-    <li><a [innerHTML]="questionObj.title" (click)="open(questionObj)"></a></li>
+  <div *ngFor="let questionObj of questions$ | async" class="ui relaxed divided list">
+    <div class="item">
+    <i class="circular inverted teal checkmark icon" *ngIf="questionObj.accepted_answer_id" suiPopup popupHeader="Is Answered"></i>
+    <div class="content">
+        <a class="header" [innerHTML]="questionObj.title" (click)="open(questionObj)"></a>
+        <div class="description">Posted on {{questionObj.creation_date}}</div>
+      </div>
+    </div>
     <ng-template let-context let-modal="modal" #modalTemplate>
     <div class="header" [innerHtml]="context.question.title + ' asked by ' + context.question.owner.display_name" suiPopup [popupTemplate]="popupTemplate" popupTrigger="click"></div>
     <sui-tabset>
@@ -43,7 +49,7 @@ export interface IContext {
       <app-mini-owner [owner]="context.question.owner"></app-mini-owner>
     </ng-template>
 </ng-template>
-</ul>`
+</div>`
 })
 export class QuestionListComponent implements OnInit {
   questions$: Observable<Question[]>;
