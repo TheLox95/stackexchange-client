@@ -54,8 +54,6 @@ export interface IContext {
                     <div class="text" [innerHtml]="comment.body"></div>
                   </div>
                 </div>
-
-
                 </div>
                 </div>
                 </sui-accordion-panel>
@@ -65,7 +63,40 @@ export interface IContext {
         </div>
     </div>
     </div>
-    <div class="ui bottom attached segment" suiTabContent="2">Second tab!</div>
+    <div class="ui bottom attached segment" suiTabContent="2">
+    <div class="ui segment">
+
+    <div *ngFor="let answer of context.question.answers">
+      <div class="ui segment" [innerHtml]="answer.body"></div>
+      <div class="ui raised secondary piled segment">
+      <sui-accordion [closeOthers]="false">
+                <sui-accordion-panel [isOpen]="true">
+                <div title>
+                    <i class="dropdown icon"></i>
+                    Comments
+                </div>
+                <div content>
+                <div class="ui comments" *ngFor="let commentObj of answer.comments">
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="{{commentObj.owner.profile_image}}">
+                  </a>
+                  <div class="content">
+                    <a class="author">{{commentObj.owner.display_name}}</a>
+                    <div class="metadata">
+                      <span class="date">{{commentObj.creation_date}}</span>
+                    </div>
+                    <div class="text" [innerHtml]="commentObj.body"></div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </sui-accordion-panel>
+                </sui-accordion>
+                </div>
+    </div>
+    </div>
+    </div>
     </sui-tabset>
     <div class="actions">
         <button class="ui secondary button" (click)="modal.approve('approved')" autofocus>Close</button>
