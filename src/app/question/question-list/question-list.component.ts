@@ -29,27 +29,7 @@ export interface IContext {
     </div>
     <div class="ui bottom attached segment" suiTabContent="1">
     <div class="content">
-        <div class="ui grid">
-          <div class="left floated six wide column" [innerHtml]="context.question.body"></div>
-          <div class="container six wide column" >
-
-              <div class="ui raised secondary piled segment right floated">
-              <sui-accordion [closeOthers]="false">
-                <sui-accordion-panel [isOpen]="true">
-                <div title>
-                    <i class="dropdown icon"></i>
-                    Comments
-                </div>
-                <div content>
-                <div class="ui comments" *ngFor="let comment of context.question.comments">
-                <app-comment [comment]="comment"></app-comment>
-                </div>
-                </div>
-                </sui-accordion-panel>
-                </sui-accordion>
-              </div>
-          </div>
-        </div>
+        <app-question [question]="context.question"></app-question>
     </div>
     </div>
     <div class="ui bottom attached segment" suiTabContent="2">
