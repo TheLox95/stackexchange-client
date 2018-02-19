@@ -21,7 +21,7 @@ export interface IContext {
     <i class="circular inverted teal checkmark icon" *ngIf="questionObj.accepted_answer_id" suiPopup popupHeader="Is Answered"></i>
     <div class="content">
         <a class="header" [innerHTML]="questionObj.title" (click)="open(questionObj)"></a>
-        <div class="description">Posted on {{questionObj.creation_date}}</div>
+        <div class="description">Posted on {{questionObj.creation_date * 1000 | date}}</div>
       </div>
     </div>
     <ng-template let-context let-modal="modal" #modalTemplate>

@@ -10,7 +10,7 @@ import { Comment } from '../Comment';
   <div class="content">
     <a class="author">{{comment.owner.display_name}}</a>
     <div class="metadata">
-      <span class="date">{{comment.creation_date}}</span>
+      <span class="date">{{comment.creation_date * 1000 | date}}</span>
     </div>
     <div class="text" [innerHtml]="comment.body"></div>
   </div>
