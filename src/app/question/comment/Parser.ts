@@ -1,5 +1,5 @@
-import { CommentsEntity } from "../definitions/StackExchangeApi";
-import OwnerParser from "../owner/Parser";
+import { CommentsEntity } from "../../definitions/StackExchangeApi";
+import OwnerParser from "../../owner/Parser";
 import {Comment} from "./Comment";
 
 

@@ -1,7 +1,7 @@
 import { ApiStackexchangeItems } from "../definitions/StackExchangeApi";
 import { Question } from "./Question";
 import OwnerParser from "../owner/Parser";
-import CommentParser from "../comment/Parser";
+import CommentParser from "./comment/Parser";
 import AnswerParser from "../answers/Parser";
 
 export default class Parser {

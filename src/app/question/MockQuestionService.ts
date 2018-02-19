@@ -1,6 +1,6 @@
 import { Observable } from "rxjs/Observable";
 import { Question } from "./Question";
-import { Comment } from "../comment/Comment";
+import { Comment } from "../question/comment/Comment";
 import { Owner } from "../owner/Owner";
 import { Answer } from "../answers/Answer";
 import QuestionServiceInterface from "./QuestionServiceInterface";

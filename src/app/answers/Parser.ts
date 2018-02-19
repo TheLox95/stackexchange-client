@@ -1,6 +1,6 @@
 import { Answer } from "./Answer";
 import OwnerParser from "../owner/Parser";
-import CommentParser from "../comment/Parser";
+import CommentParser from "../question/comment/Parser";
 import { AnswersEntity } from "../definitions/StackExchangeApi";
 
 export default class Parser {

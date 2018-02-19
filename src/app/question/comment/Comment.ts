@@ -1,4 +1,4 @@
-import { CommentsEntity, Owner } from "../definitions/StackExchangeApi";
+import { CommentsEntity, Owner } from "../../definitions/StackExchangeApi";
 
 export class Comment implements CommentsEntity{
 	private _edited: boolean;
@@ -47,6 +47,6 @@ export class Comment implements CommentsEntity{
 	public get body(): string {
 		return this._body;
 	}
-    
+
 
 }

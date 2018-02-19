@@ -7,8 +7,9 @@ import { QuestionRoutingModule } from './question-routing.module';
 import { QuestionListComponent } from './question-list/question-list.component';
 import { SuiModule } from 'ng2-semantic-ui';
 import { MiniOwnerComponent } from '../owner/mini-owner/mini-owner.component';
-import { CommentComponent } from '../comment/comment/comment.component';
+import { CommentComponent } from './comment/comment/comment.component';
 import { AnswerComponent } from '../answers/answer/answer.component';
+import { CommentListComponent } from './comment/comment-list/comment-list.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AnswerComponent } from '../answers/answer/answer.component';
     QuestionComponent,
     MiniOwnerComponent,
     CommentComponent,
-    AnswerComponent
+    AnswerComponent,
+    CommentListComponent
   ],
   providers: [ QuestionService ]
 })
