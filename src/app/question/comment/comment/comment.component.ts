@@ -8,7 +8,7 @@ import { Comment } from '../Comment';
     <img src="{{comment.owner.profile_image}}">
   </a>
   <div class="content">
-    <a class="author">{{comment.owner.display_name}}</a>
+    <a class="author" target="_blank" [href]="comment.owner.link">{{comment.owner.display_name}}</a>
     <div class="metadata">
       <span class="date">{{comment.creation_date * 1000 | date}}</span>
     </div>

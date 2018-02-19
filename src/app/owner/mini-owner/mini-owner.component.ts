@@ -7,7 +7,7 @@ import { Owner } from "../Owner";
   <img src="{{owner.profile_image}}">
   </div>
   <div class="content">
-    <a class="header" href="{{owner.link}}" [innerHtml]="owner.display_name"></a>
+    <a class="header" target="_blank" href="{{owner.link}}" [innerHtml]="owner.display_name"></a>
   </div>`
 })
 export class MiniOwnerComponent implements OnInit {

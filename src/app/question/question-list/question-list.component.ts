@@ -18,8 +18,8 @@ export interface IContext {
   template: `
   <div *ngFor="let questionObj of questions$ | async" class="ui relaxed divided list">
     <div class="item">
-    <i class="circular inverted teal checkmark icon" *ngIf="questionObj.accepted_answer_id" suiPopup popupHeader="Is Answered"></i>
-    <div class="content">
+      <i class="circular inverted teal checkmark icon" *ngIf="questionObj.accepted_answer_id" suiPopup popupHeader="Is Answered"></i>
+      <div class="content">
         <a class="header" [innerHTML]="questionObj.title" (click)="open(questionObj)"></a>
         <div class="description">Posted on {{questionObj.creation_date * 1000 | date}}</div>
       </div>
@@ -29,7 +29,9 @@ export interface IContext {
     <sui-tabset>
     <div class="ui top attached tabular menu">
         <a class="item" suiTabHeader="1">Question</a>
-        <a class="item" suiTabHeader="2" [isDisabled]="context.question.answers == 0">Answers</a>
+        <a class="item" suiTabHeader="2" [isDisabled]="context.question.answers == 0">
+          {{context.question.answers == 0 ? "No answers" : "Answers"}}
+        </a>
     </div>
     <div class="ui bottom attached segment" suiTabContent="1">
       <div class="content">
