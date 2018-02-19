@@ -3,7 +3,7 @@ import { Answer } from "../Answer";
 
 @Component({
   selector: "app-answer",
-  template: `<div class="ui segment" [innerHtml]="answer.body"></div>
+  template: `<div [ngClass]="{'ui segment green': answer.is_accepted, 'ui segment': answer.is_accepted }" [innerHtml]="answer.body"></div>
   <div class="ui raised secondary piled segment">
     <app-comment-list [comments]="answer.comments"></app-comment-list>
   </div>`
