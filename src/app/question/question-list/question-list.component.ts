@@ -19,6 +19,7 @@ export interface IContext {
   <div *ngFor="let questionObj of questions$ | async" class="ui relaxed divided list">
     <div class="item">
       <i class="circular inverted teal checkmark icon" *ngIf="questionObj.accepted_answer_id" suiPopup popupHeader="Is Answered"></i>
+      <i class="minus large circle inverted grey icon" *ngIf="questionObj.answer_count == 0" suiPopup popupHeader="No answers"></i>
       <div class="content">
         <a class="header" [innerHTML]="questionObj.title" (click)="open(questionObj)"></a>
         <div class="description">Posted on {{questionObj.creation_date * 1000 | date}}</div>
