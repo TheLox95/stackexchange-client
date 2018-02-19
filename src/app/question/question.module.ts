@@ -6,6 +6,7 @@ import { QuestionService } from './question.service';
 import { QuestionRoutingModule } from './question-routing.module';
 import { QuestionListComponent } from './question-list/question-list.component';
 import { SuiModule } from 'ng2-semantic-ui';
+import { MiniOwnerComponent } from '../owner/mini-owner/mini-owner.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SuiModule } from 'ng2-semantic-ui';
   ],
   declarations: [
     QuestionListComponent,
-    QuestionComponent
+    QuestionComponent,
+    MiniOwnerComponent
   ],
   providers: [ QuestionService ]
 })

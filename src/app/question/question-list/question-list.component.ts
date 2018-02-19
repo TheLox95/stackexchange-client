@@ -102,12 +102,7 @@ export interface IContext {
         <button class="ui secondary button" (click)="modal.approve('approved')" autofocus>Close</button>
     </div>
     <ng-template let-popup #popupTemplate>
-      <div class="image">
-        <img src="{{context.question.owner.profile_image}}">
-      </div>
-      <div class="content">
-        <a class="header" href="{{context.question.owner.link}}" [innerHtml]="context.question.owner.display_name"></a>
-      </div>
+      <app-mini-owner [owner]="context.question.owner"></app-mini-owner>
     </ng-template>
 </ng-template>
 </ul>
