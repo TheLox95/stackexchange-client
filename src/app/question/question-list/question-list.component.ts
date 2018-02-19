@@ -59,6 +59,7 @@ export class QuestionListComponent implements OnInit {
   @ViewChild("modalTemplate")
   public modalTemplate: ModalTemplate<IContext, string, string>;
   _question;
+  private _currentPage: number;
 
   constructor(
     private questionService: QuestionService,
@@ -66,7 +67,7 @@ export class QuestionListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.questions$ = this.questionService.getList();
+    this.questions$ = this.questionService.getList(this._currentPage);
   }
 
   public open(dynamicContent: Question) {

@@ -5,11 +5,16 @@ import { Owner } from "../owner/Owner";
 import { Answer } from "../answers/Answer";
 import QuestionServiceInterface from "./QuestionServiceInterface";
 
-
-export class MockQuestionService implements QuestionServiceInterface{
+export class MockQuestionService implements QuestionServiceInterface {
   get(id) {
     return new Observable<Question[]>(observer => {
-      const owner = new Owner(2907819,"registered","https://i.stack.imgur.com/7ZJOa.gif?s=128&g=1","Ni.","https://stackoverflow.com/users/2907819/ni");
+      const owner = new Owner(
+        2907819,
+        "registered",
+        "https://i.stack.imgur.com/7ZJOa.gif?s=128&g=1",
+        "Ni.",
+        "https://stackoverflow.com/users/2907819/ni"
+      );
 
       const comment1 = new Comment(
         owner,
@@ -64,9 +69,15 @@ export class MockQuestionService implements QuestionServiceInterface{
     });
   }
 
-  getList() {
+  getList(page: number) {
     return new Observable<Question[]>(observer => {
-      const owner = new Owner(2907819,"registered","https://i.stack.imgur.com/7ZJOa.gif?s=128&g=1","Ni.","https://stackoverflow.com/users/2907819/ni");
+      const owner = new Owner(
+        2907819,
+        "registered",
+        "https://i.stack.imgur.com/7ZJOa.gif?s=128&g=1",
+        "Ni.",
+        "https://stackoverflow.com/users/2907819/ni"
+      );
 
       const comment1 = new Comment(
         owner,

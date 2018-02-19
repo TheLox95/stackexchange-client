@@ -11,7 +11,7 @@ import QuestionServiceInterface from "./QuestionServiceInterface";
 export class QuestionService implements QuestionServiceInterface{
   constructor(private _http: HttpClient) {}
 
-  getList() {
+  getList(page: number) {
     return this._http
       .get<ApiStackexchangeQuestions>("http://localhost:4585/questions")
       .map(item => this.toQuestion(item));
