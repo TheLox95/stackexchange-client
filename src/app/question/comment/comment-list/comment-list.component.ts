@@ -6,7 +6,7 @@ import { Output } from '@angular/core/src/metadata/directives';
 
 @Component({
   selector: 'app-comment-list',
-  template: `<sui-accordion [closeOthers]="false" *ngIf="disabled; else noCommentsMsg">
+  template: `<sui-accordion [closeOthers]="false" *ngIf="!disabled; else noCommentsMsg">
   <sui-accordion-panel [isOpen]="!disabled">
     <div title>
       <i class="dropdown icon"></i>

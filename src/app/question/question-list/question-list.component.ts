@@ -25,7 +25,7 @@ export interface IContext {
     <sui-tabset>
     <div class="ui top attached tabular menu">
         <a class="item" suiTabHeader="1">Question</a>
-        <a class="item" suiTabHeader="2">Answers</a>
+        <a class="item" suiTabHeader="2" [isDisabled]="context.question.answers == 0">Answers</a>
     </div>
     <div class="ui bottom attached segment" suiTabContent="1">
       <div class="content">
