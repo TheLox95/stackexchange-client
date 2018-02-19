@@ -28,17 +28,14 @@ export interface IContext {
         <a class="item" suiTabHeader="2">Answers</a>
     </div>
     <div class="ui bottom attached segment" suiTabContent="1">
-    <div class="content">
+      <div class="content">
         <app-question [question]="context.question"></app-question>
-    </div>
+      </div>
     </div>
     <div class="ui bottom attached segment" suiTabContent="2">
-    <div class="ui segment">
-
-    <div *ngFor="let answer of context.question.answers">
-    <app-answer [answer] ="answer"></app-answer>
-    </div>
-    </div>
+      <div class="ui segment" *ngFor="let answer of context.question.answers">
+        <app-answer [answer] ="answer"></app-answer>
+      </div>
     </div>
     </sui-tabset>
     <div class="actions">
@@ -48,9 +45,7 @@ export interface IContext {
       <app-mini-owner [owner]="context.question.owner"></app-mini-owner>
     </ng-template>
 </ng-template>
-</ul>
-`,
-  styleUrls: ["./question-list.component.css"]
+</ul>`
 })
 export class QuestionListComponent implements OnInit {
   questions$: Observable<Question[]>;
