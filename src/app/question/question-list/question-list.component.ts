@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 import { QuestionService } from "../question.service";
 import { Question } from "../Question";
 import { Observable } from "rxjs/Observable";
+import 'rxjs/add/observable/of';
 import {
   SuiModalService,
   TemplateModalConfig,
@@ -17,6 +18,7 @@ export interface IContext {
   selector: "app-question-list",
   template: `
   <div *ngIf="questions$ | async as questions; else loading" >
+  <div *ngIf="questions.length > 0; else netError" >
   <div *ngFor="let questionObj of questions" class="ui relaxed divided list">
     <div class="item">
       <i class="circular inverted teal checkmark icon" *ngIf="questionObj.accepted_answer_id" suiPopup popupHeader="Is Answered"></i>
@@ -55,9 +57,19 @@ export interface IContext {
   </ng-template>
 </div>
 </div>
+</div>
 <ng-template #loading>
-<div class="ui active inverted dimmer">
+  <div class="ui active inverted dimmer">
     <div class="ui text loader"> Getting questions</div>
+  </div>
+</ng-template>
+<ng-template #netError>
+  <div class="ui error message">
+  <div class="header">
+    There was an error
+  </div>
+  <p>Check your internet connection.</p>
+  <p>Refresh to try again</p>
   </div>
 </ng-template>
 `,
@@ -76,7 +88,8 @@ export class QuestionListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.questions$ = this.questionService.getList(this._currentPage);
+    this.questionService.getList(this._currentPage)
+    .subscribe(res => this.questions$ = Observable.of(res), err => this.questions$ = Observable.of([]));
   }
 
   public open(dynamicContent: Question) {
