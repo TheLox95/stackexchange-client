@@ -16,7 +16,8 @@ export interface IContext {
 @Component({
   selector: "app-question-list",
   template: `
-  <div *ngFor="let questionObj of questions$ | async" class="ui relaxed divided list">
+  <div *ngIf="questions$ | async as questions; else loading" >
+  <div *ngFor="let questionObj of questions" class="ui relaxed divided list">
     <div class="item">
       <i class="circular inverted teal checkmark icon" *ngIf="questionObj.accepted_answer_id" suiPopup popupHeader="Is Answered"></i>
       <i class="minus large circle inverted grey icon" *ngIf="questionObj.answer_count == 0" suiPopup popupHeader="No answers"></i>
@@ -51,8 +52,16 @@ export interface IContext {
     <ng-template let-popup #popupTemplate>
       <app-mini-owner [owner]="context.question.owner"></app-mini-owner>
     </ng-template>
+  </ng-template>
+</div>
+</div>
+<ng-template #loading>
+<div class="ui active inverted dimmer">
+    <div class="ui text loader"> Getting questions</div>
+  </div>
 </ng-template>
-</div>`
+`,
+styles: ['.loading{ padding: 50px;}']
 })
 export class QuestionListComponent implements OnInit {
   questions$: Observable<Question[]>;

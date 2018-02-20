@@ -13,6 +13,7 @@
     "lint": "ng lint",
     "e2e": "concurrently --kill-others \"ng e2e\" \"npm run fake-server\" ",
     "fake-server": "json-server --watch fake-server/api.json --port 4585",
+    "fake-server:slow": "json-server --watch fake-server/api.json --port 4585 --delay 5000",
     "electron": "tsc main.ts && ng build --prod && electron ."
   },
   "private": true,
