@@ -6,6 +6,7 @@ import Parser from "./Parser";
 import { Observable } from "rxjs/Observable";
 import { Question } from "./Question";
 import QuestionServiceInterface from "./QuestionServiceInterface";
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class QuestionService implements QuestionServiceInterface{
@@ -13,7 +14,7 @@ export class QuestionService implements QuestionServiceInterface{
 
   getList(page: number) {
     return this._http
-      .get<ApiStackexchangeQuestions>("http://localhost:4585/questions")
+      .get<ApiStackexchangeQuestions>(environment.backEndUrlApi)
       .map(item => this.toQuestion(item));
   }
 
