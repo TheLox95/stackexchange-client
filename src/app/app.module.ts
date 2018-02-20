@@ -9,10 +9,13 @@ import { AppRoutingModule } from './/app-routing.module';
 import { QuestionService } from './question/question.service';
 import { QuestionModule } from './question/question.module';
 import {SuiModule} from 'ng2-semantic-ui';
+import { RouterOutletStubComponent, RouterLinkStubDirective } from './router-stubs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RouterOutletStubComponent,
+    RouterLinkStubDirective
   ],
   imports: [
     BrowserModule,
