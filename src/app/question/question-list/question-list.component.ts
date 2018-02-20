@@ -1,3 +1,4 @@
+import { ConnectionService } from './../../connection/connection.service';
 import { Router, ActivatedRoute } from "@angular/router";
 import { Component, OnInit, ViewChild, ChangeDetectorRef } from "@angular/core";
 import { QuestionService } from "../question.service";
@@ -58,7 +59,13 @@ export interface IContext {
 </div>
 </div>
 </div>
-<div (click)="loadMore()" class="fluid ui button" id="loadMore">Load more</div>
+  <div 
+    (click)="loadMore()" 
+    [ngClass]="{'fluid ui button':true, 'disabled': !(thereIsInternetConection$ | async)}" 
+    id="loadMore" >
+      Load more
+  </div>
+  <div class="ui orange message" id="noConnectionMsg" *ngIf="!(thereIsInternetConection$ | async)">There is no internet connection</div>
 <ng-template #loading>
   <div class="ui active inverted dimmer">
     <div class="ui text loader"> Getting questions</div>
@@ -76,24 +83,30 @@ export interface IContext {
 `,
 styles: [
   '.loading{ padding: 50px;}',
-  '#loadMore{margin-top: 50px; margin-bottom: 50px;}'
+  '#loadMore{margin-top: 50px; margin-bottom: 50px;}',
+  '#noConnectionMsg{ margin-bottom: 50px;}'
 ]
 })
 export class QuestionListComponent implements OnInit {
   questions$: Observable<Question[]>;
+  thereIsInternetConection$: Observable<boolean>;
   @ViewChild("modalTemplate")
   public modalTemplate: ModalTemplate<IContext, string, string>;
   private _currentPage: number;
   private _questions: Question[] = [];
 
+
   constructor(
     private questionService: QuestionService,
+    private connectionService: ConnectionService,
     public modalService: SuiModalService
   ) {}
 
   ngOnInit() {
     this.questionService.getList(this._currentPage)
     .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
+
+    this.thereIsInternetConection$ = this.connectionService.onConnectionStateChange();
   }
 
   loadMore() {

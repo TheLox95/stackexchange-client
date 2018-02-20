@@ -1,3 +1,4 @@
+import { ConnectionService } from './../connection/connection.service';
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 import { FormsModule }    from '@angular/forms';
@@ -26,6 +27,6 @@ import { CommentListComponent } from './comment/comment-list/comment-list.compon
     AnswerComponent,
     CommentListComponent
   ],
-  providers: [ QuestionService ]
+  providers: [ QuestionService, ConnectionService ]
 })
 export class QuestionModule {}
