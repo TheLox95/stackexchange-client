@@ -1,5 +1,5 @@
 import { Router, ActivatedRoute } from "@angular/router";
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit, ViewChild, ChangeDetectorRef } from "@angular/core";
 import { QuestionService } from "../question.service";
 import { Question } from "../Question";
 import { Observable } from "rxjs/Observable";
@@ -58,6 +58,7 @@ export interface IContext {
 </div>
 </div>
 </div>
+<div (click)="loadMore()" class="fluid ui button" id="loadMore">Load more</div>
 <ng-template #loading>
   <div class="ui active inverted dimmer">
     <div class="ui text loader"> Getting questions</div>
@@ -73,14 +74,17 @@ export interface IContext {
   </div>
 </ng-template>
 `,
-styles: ['.loading{ padding: 50px;}']
+styles: [
+  '.loading{ padding: 50px;}',
+  '#loadMore{margin-top: 50px; margin-bottom: 50px;}'
+]
 })
 export class QuestionListComponent implements OnInit {
   questions$: Observable<Question[]>;
   @ViewChild("modalTemplate")
   public modalTemplate: ModalTemplate<IContext, string, string>;
-  _question;
   private _currentPage: number;
+  private _questions: Question[] = [];
 
   constructor(
     private questionService: QuestionService,
@@ -89,7 +93,21 @@ export class QuestionListComponent implements OnInit {
 
   ngOnInit() {
     this.questionService.getList(this._currentPage)
-    .subscribe(res => this.questions$ = Observable.of(res), err => this.questions$ = Observable.of([]));
+    .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
+  }
+
+  loadMore() {
+    this.questionService.getList(this._currentPage++)
+    .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
+  }
+
+  private _setQuestions(questions: Question[])  {
+      this._questions.push(...questions);
+      this.questions$ = Observable.of(this._questions);
+  }
+
+  private _handleServiceError(err: any) {
+    this.questions$ = Observable.of([]);
   }
 
   public open(dynamicContent: Question) {
