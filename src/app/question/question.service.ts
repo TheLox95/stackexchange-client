@@ -18,13 +18,6 @@ export class QuestionService implements QuestionServiceInterface {
       .map(item => this.toQuestion(item));
   }
 
-  get(id: number) {
-    return this._http
-      .get<ApiStackexchangeQuestions>("http://localhost:4585/question")
-      .map(item => this.toQuestion(item))
-      .map(this.getOne);
-  }
-
   private toQuestion(res: ApiStackexchangeQuestions) {
     const parser = new Parser();
     res.items.map(item =>
