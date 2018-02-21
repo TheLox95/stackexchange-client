@@ -103,6 +103,7 @@ export class QuestionListComponent implements OnInit {
   questions$: Observable<Question[]>;
   sites$: Observable<StackExchangeSite[]>;
   thereIsInternetConection$: Observable<boolean>;
+  STACKOVERFLOW_API_SITE_PARAMETER = `stackoverflow`;
   @ViewChild("modalTemplate")
   public modalTemplate: ModalTemplate<IContext, string, string>;
   private _currentPage: number;
@@ -118,14 +119,14 @@ export class QuestionListComponent implements OnInit {
 
   ngOnInit() {
     this.sites$ = this.sitesServices.get();
-    this.questionService.getList('stackoverflow', this._currentPage)
+    this.questionService.getList(this.STACKOVERFLOW_API_SITE_PARAMETER, this._currentPage)
     .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
 
     this.thereIsInternetConection$ = this.connectionService.onConnectionStateChange();
   }
 
   loadMore() {
-    this.questionService.getList('stackoverflow', this._currentPage++)
+    this.questionService.getList(this.STACKOVERFLOW_API_SITE_PARAMETER, this._currentPage++)
     .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
   }
 
