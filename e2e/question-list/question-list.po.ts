@@ -5,7 +5,7 @@ export class QuestionList {
     return browser.get('/questions');
   }
 
-  getParagraphText() {
+  getFirstElementOfList() {
     return element.all(by.css(`#questionList`)).then(elements => elements[1]);
   }
 }

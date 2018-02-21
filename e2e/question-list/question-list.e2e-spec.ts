@@ -11,6 +11,6 @@ describe('question-component', () => {
 
   it('it should fill the question list', () => {
     list.navigateTo();
-    list.getParagraphText().then(el => expect(el).toBeDefined());
+    list.getFirstElementOfList().then(el => expect(el).toBeDefined());
   });
 });
