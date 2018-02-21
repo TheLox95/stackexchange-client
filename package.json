@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "npm run serve",
+    "start": "node server.js"
     "dev": "concurrently \"npm run serve\" \"npm run fake-server\" ",
     "serve": "ng serve --open",
     "build": "ng build --prod",
@@ -14,7 +14,8 @@
     "e2e": "concurrently --kill-others \"ng e2e\" \"npm run fake-server\" ",
     "fake-server": "json-server --watch fake-server/api.json --port 4585",
     "fake-server:slow": "json-server --watch fake-server/api.json --port 4585 --delay 5000",
-    "electron": "tsc main.ts && ng build --prod && electron ."
+    "electron": "tsc main.ts && ng build --prod && electron .",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +43,7 @@
     "codelyzer": "^4.0.1",
     "concurrently": "^3.5.1",
     "electron": "^1.8.2",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "json-server": "^0.12.1",
@@ -54,5 +56,9 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
+  },
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
   }
 }
