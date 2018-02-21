@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js"
+    "start": "node server.js",
     "dev": "concurrently \"npm run serve\" \"npm run fake-server\" ",
     "serve": "ng serve --open",
     "build": "ng build --prod",
