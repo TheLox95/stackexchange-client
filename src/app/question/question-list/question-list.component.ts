@@ -120,28 +120,28 @@ export class QuestionListComponent implements OnInit {
   ngOnInit() {
     this.sites$ = this.sitesServices.get();
     this.questionService.getList(this.STACKOVERFLOW_API_SITE_PARAMETER, this._currentPage)
-    .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
+    .subscribe(this._setQuestions, this._handleServiceError);
 
     this.thereIsInternetConection$ = this.connectionService.onConnectionStateChange();
   }
 
   loadMore() {
     this.questionService.getList(this.STACKOVERFLOW_API_SITE_PARAMETER, this._currentPage++)
-    .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
+    .subscribe(this._setQuestions, this._handleServiceError);
   }
 
   selectedOption(e: StackExchangeSite) {
     this.questions$ = null;
     this.questionService.getList(e.api_site_parameter, this._currentPage)
-    .subscribe(res => this.questions$ = Observable.of(res), err => this._handleServiceError(err));
+    .subscribe(res => this.questions$ = Observable.of(res), this._handleServiceError);
   }
 
-  private _setQuestions(questions: Question[])  {
+  private readonly _setQuestions = (questions: Question[]) => {
       this._questions.push(...questions);
       this.questions$ = Observable.of(this._questions);
   }
 
-  private _handleServiceError(err: any) {
+  private readonly _handleServiceError = (err: any) => {
     this.questions$ = Observable.of([]);
   }
 
