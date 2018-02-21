@@ -9,12 +9,12 @@ import QuestionServiceInterface from "./QuestionServiceInterface";
 import { environment } from '../../environments/environment';
 
 @Injectable()
-export class QuestionService implements QuestionServiceInterface{
+export class QuestionService implements QuestionServiceInterface {
   constructor(private _http: HttpClient) {}
 
-  getList(page: number) {
+  getList(site: string, page: number) {
     return this._http
-      .get<ApiStackexchangeQuestions>(environment.backEndUrlApi)
+      .get<ApiStackexchangeQuestions>(environment.backEndUrlApi(site))
       .map(item => this.toQuestion(item));
   }
 

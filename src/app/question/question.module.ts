@@ -11,6 +11,7 @@ import { MiniOwnerComponent } from '../owner/mini-owner/mini-owner.component';
 import { CommentComponent } from './comment/comment/comment.component';
 import { AnswerComponent } from '../answers/answer/answer.component';
 import { CommentListComponent } from './comment/comment-list/comment-list.component';
+import { SitesService } from '../sites/sites.service';
 
 
 @NgModule({
@@ -27,6 +28,6 @@ import { CommentListComponent } from './comment/comment-list/comment-list.compon
     AnswerComponent,
     CommentListComponent
   ],
-  providers: [ QuestionService, ConnectionService ]
+  providers: [ QuestionService, ConnectionService, SitesService ]
 })
 export class QuestionModule {}

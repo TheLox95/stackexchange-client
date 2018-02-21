@@ -10,6 +10,8 @@ import {
   TemplateModalConfig,
   ModalTemplate
 } from "ng2-semantic-ui";
+import { SitesService } from '../../sites/sites.service';
+import { StackExchangeSite } from '../../definitions/StackExchangeSites';
 
 export interface IContext {
   question: Question;
@@ -18,6 +20,16 @@ export interface IContext {
 @Component({
   selector: "app-question-list",
   template: `
+  <div class="ui segments">
+    <div class="ui segment">
+        <p>Change site</p>
+        <sui-select class="selection" (selectedOptionChange)=selectedOption($event) labelField="name">
+            <sui-select-option *ngFor="let site of this.sites$ | async"
+                              [value]="site">
+            </sui-select-option>
+        </sui-select>
+    </div>
+  </div>
   <div *ngIf="questions$ | async as questions; else loading" >
   <div *ngIf="questions.length > 0; else netError" >
   <div *ngFor="let questionObj of questions" class="ui relaxed divided list">
@@ -59,9 +71,9 @@ export interface IContext {
 </div>
 </div>
 </div>
-  <div 
-    (click)="loadMore()" 
-    [ngClass]="{'fluid ui button':true, 'disabled': !(thereIsInternetConection$ | async)}" 
+  <div
+    (click)="loadMore()"
+    [ngClass]="{'fluid ui button':true, 'disabled': !(thereIsInternetConection$ | async)}"
     id="loadMore" >
       Load more
   </div>
@@ -89,6 +101,8 @@ styles: [
 })
 export class QuestionListComponent implements OnInit {
   questions$: Observable<Question[]>;
+  sites$: Observable<StackExchangeSite[]>;
+  private _currentSite: StackExchangeSite;
   thereIsInternetConection$: Observable<boolean>;
   @ViewChild("modalTemplate")
   public modalTemplate: ModalTemplate<IContext, string, string>;
@@ -99,19 +113,28 @@ export class QuestionListComponent implements OnInit {
   constructor(
     private questionService: QuestionService,
     private connectionService: ConnectionService,
+    private sitesServices: SitesService,
     public modalService: SuiModalService
   ) {}
 
   ngOnInit() {
-    this.questionService.getList(this._currentPage)
+    this.sites$ = this.sitesServices.get();
+    this.questionService.getList('stackoverflow', this._currentPage)
     .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
 
     this.thereIsInternetConection$ = this.connectionService.onConnectionStateChange();
   }
 
   loadMore() {
-    this.questionService.getList(this._currentPage++)
+    this.questionService.getList('stackoverflow', this._currentPage++)
     .subscribe(res => this._setQuestions(res), err => this._handleServiceError(err));
+  }
+
+  selectedOption(e: StackExchangeSite) {
+    this.questions$ = null;
+    this._currentSite = e;
+    this.questionService.getList(e.api_site_parameter, this._currentPage)
+    .subscribe(res => this.questions$ = Observable.of(res), err => this._handleServiceError(err));
   }
 
   private _setQuestions(questions: Question[])  {

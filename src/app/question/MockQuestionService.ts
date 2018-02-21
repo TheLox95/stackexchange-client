@@ -69,7 +69,7 @@ export class MockQuestionService implements QuestionServiceInterface {
     });
   }
 
-  getList(page: number) {
+  getList(site: string , page: number) {
     return new Observable<Question[]>(observer => {
       const owner = new Owner(
         2907819,

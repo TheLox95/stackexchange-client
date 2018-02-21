@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  backEndUrlApi: 'http://localhost:4585/questions'
+  backEndUrlApi: site => `http://localhost:4585/questions/`
 };
