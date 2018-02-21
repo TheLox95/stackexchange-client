@@ -6,12 +6,6 @@ export class QuestionList {
   }
 
   getParagraphText() {
-    return element.all(by.css('ul li')).then(elements => elements[1]);
-      /*.findElements(by.tagName('li'))
-      .then(function (links) {
-        return links[1]
-        //place expects here, otherwise it will run async and your expects will be hit 
-        //before the lookup
-      });*/
+    return element.all(by.css(`#questionList`)).then(elements => elements[1]);
   }
 }
