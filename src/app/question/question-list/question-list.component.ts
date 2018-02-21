@@ -102,7 +102,6 @@ styles: [
 export class QuestionListComponent implements OnInit {
   questions$: Observable<Question[]>;
   sites$: Observable<StackExchangeSite[]>;
-  private _currentSite: StackExchangeSite;
   thereIsInternetConection$: Observable<boolean>;
   @ViewChild("modalTemplate")
   public modalTemplate: ModalTemplate<IContext, string, string>;
@@ -132,7 +131,6 @@ export class QuestionListComponent implements OnInit {
 
   selectedOption(e: StackExchangeSite) {
     this.questions$ = null;
-    this._currentSite = e;
     this.questionService.getList(e.api_site_parameter, this._currentPage)
     .subscribe(res => this.questions$ = Observable.of(res), err => this._handleServiceError(err));
   }
