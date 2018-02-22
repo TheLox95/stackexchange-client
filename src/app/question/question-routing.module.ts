@@ -5,8 +5,7 @@ import { QuestionListComponent } from './question-list/question-list.component';
 import { QuestionComponent } from './question.component';
 
 const heroesRoutes: Routes = [
-    { path: 'question/:id', component: QuestionComponent },
-    { path: 'questions',  component: QuestionListComponent },
+    { path: 'questions',  component: QuestionListComponent }
 ];
 
 @NgModule({
